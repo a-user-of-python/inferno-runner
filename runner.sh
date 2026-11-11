@@ -15,7 +15,7 @@ STRIKES=0
 echo "runner started $(date)"
 while [ ! -f "$ZIP" ]; do
   if [ -f "$DIR/STOP" ]; then echo "STOP file present - runner exiting"; break; fi
-  git pull -q --ff-only 2>/dev/null || true
+  git pull -q --rebase 2>/dev/null || git pull -q --ff-only 2>/dev/null || true
   SHA=$(git rev-parse HEAD 2>/dev/null || echo none)
   if [ "$SHA" != "$LASTSHA" ]; then LASTSHA="$SHA"; STRIKES=0; fi
   STAMP=$(date +%Y%m%d-%H%M%S)
