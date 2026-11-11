@@ -31,6 +31,16 @@ while [ ! -f "$ZIP" ]; do
     STRIKES=$((STRIKES+1))
     echo "FAILED $(date) exit=$EC strikes=$STRIKES build=$SHA" > "$DIR/state.txt"
   fi
+  # Scrub personal identifiers before anything is pushed (public repo):
+  # home path -> ~, Mac username -> user, hostname -> user-mac.
+  IR_USER="$(whoami)"; IR_HOME="$HOME"; IR_HOST="$(hostname -s 2>/dev/null || true)"
+  export IR_USER IR_HOME IR_HOST
+  for f in "$DIR"/logs/*.log "$DIR/state.txt"; do
+    [ -f "$f" ] || continue
+    perl -pi -e 's/\Q$ENV{IR_HOME}\E/~/g' "$f" 2>/dev/null || true
+    perl -pi -e 's/\Q$ENV{IR_USER}\E/user/g' "$f" 2>/dev/null || true
+    if [ -n "$IR_HOST" ]; then perl -pi -e 's/\Q$ENV{IR_HOST}\E/user-mac/g' "$f" 2>/dev/null || true; fi
+  done
   git add -A >/dev/null 2>&1
   git commit -q -m "run $STAMP exit=$EC" >/dev/null 2>&1 || true
   git push -q >/dev/null 2>&1 || echo "warning: log push failed (retried next run)"
