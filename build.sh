@@ -323,7 +323,7 @@ SCP="scp -i /work/keys/id_ed25519 -P 2222 -o StrictHostKeyChecking=no"
 DEX 'mkdir -p /work/run
 [ -f /work/run/companion.pid ] && kill "$(cat /work/run/companion.pid)" 2>/dev/null; sleep 1
 QB=/work/src/Inferno/build
-$QB/qemu-system-x86_64 -M pc -accel tcg,thread=multi -smp 1 -m 2G \
+nice -n 15 $QB/qemu-system-x86_64 -M pc -accel tcg,thread=multi -smp 1 -m 2G \
   -drive file=/work/companion/debian.qcow2,format=qcow2,if=virtio \
   -cdrom /work/companion/seed.iso \
   -netdev user,id=net0,hostfwd=tcp::2222-:22 -device virtio-net-pci,netdev=net0 \
@@ -355,7 +355,10 @@ DEX "$SCP /work/ipsw.ipsw /work/data/root_ticket.der inferno@127.0.0.1:" || die 
 # ---------- 11. Two-VM restore (companion USB first, then the t8030 guest) ----------
 RESTORE_DONE=0
 for attempt in 1 2 3 4 5 6 7 8 9 10; do
-[ "$attempt" -gt 1 ] && say "Restore attempt $attempt of 10 — relaunching the guest"
+if [ "$attempt" -gt 1 ]; then
+say "Restore attempt $attempt of 10 — 2-minute cool-down first (lets the host CPU recover), then relaunching the guest"
+sleep 120
+fi
 DEX "$SSH 'pgrep -f \"idevicerestor[e]\" >/dev/null || pgrep -f \"fire-restor[e]\" >/dev/null'" || DEX "$SSH 'cat > ~/fire-restore.sh <<EOS
 #!/bin/bash
 for i in \$(seq 1 300); do idevice_id -l 2>/dev/null | grep -q 00008030 && break; sleep 2; done
@@ -383,6 +386,7 @@ $QB/qemu-system-aarch64 -accel tcg,thread=multi \
   -drive file=$D/panic_log,format=raw,if=none,id=panic_log -device nvme-ns,drive=panic_log,bus=nvme-bus.0,nsid=7,nstype=8,logical_block_size=4096,physical_block_size=4096 \
   -drive file=$D/nvram,if=none,format=raw,id=nvram -device apple-nvram,drive=nvram,bus=nvme-bus.0,nsid=5,nstype=5,id=nvram,logical_block_size=4096,physical_block_size=4096' \
   || die "guest boot failed"
+DEX 'renice -5 -p "$(cat /work/run/guest.pid)" >/dev/null 2>&1 || true' || true
 say "Restore attempt $attempt: watching the guest boot first (watchdog check), then the restore itself"
 DEX 'for i in $(seq 1 36); do
   '"$SSH"' "test -f ~/RESTORE_EXIT" 2>/dev/null && exit 0
