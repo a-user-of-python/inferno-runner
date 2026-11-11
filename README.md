@@ -1,4 +1,4 @@
-# inferno-runner (private)
+# inferno-runner
 
 Self-updating build loop for the Inferno guest-image build.
 
@@ -12,4 +12,6 @@ Self-updating build loop for the Inferno guest-image build.
 - `logs/` — one set per run, pushed by the runner.
 - A file named `STOP` in the repo root stops the runner at its next check.
 
-Private because the logs contain local paths and the machine's username.
+Public repo. Before pushing, the runner scrubs the Mac username, home
+path and hostname out of every log (they become `user`, `~` and
+`user-mac`), so no personal identifiers are published.
