@@ -1,1 +1,1 @@
-WAITING - runner not started yet
+FAILED Wed Nov 11 13:55:54 EST 2026 exit=1 strikes=1 build=6122d31124ba8d600744e9922091952251783e71

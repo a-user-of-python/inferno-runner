@@ -1,0 +1,706 @@
+
+=== Waiting for Docker (complete its first-run prompts, incl. password, if shown) ===
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.56kB 0.0s done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/debian:bookworm
+#2 ...
+
+#3 [auth] library/debian:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/debian:bookworm
+#2 DONE 0.5s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [1/6] FROM docker.io/library/debian:bookworm@sha256:268fb24c39bca92d326dd83ea3abebe4a3f7751c804ffef23bb6d857dd343ff8
+#5 resolve docker.io/library/debian:bookworm@sha256:268fb24c39bca92d326dd83ea3abebe4a3f7751c804ffef23bb6d857dd343ff8 0.0s done
+#5 DONE 0.0s
+
+#6 [5/6] RUN apt-get update && apt-get install -y --no-install-recommends python3-pip   && pip3 install --break-system-packages "meson>=1.5,<2" && rm -rf /var/lib/apt/lists/*
+#6 CACHED
+
+#7 [3/6] RUN curl -LO https://ftp.gnu.org/gnu/nettle/nettle-3.10.2.tar.gz ||     curl -LO https://mirrors.kernel.org/gnu/nettle/nettle-3.10.2.tar.gz;   tar xf nettle-3.10.2.tar.gz && cd nettle-3.10.2 && ./configure --prefix=/usr/local   --disable-documentation && make -j"$(nproc)" && make install && ldconfig && cd / && rm -rf nettle-3.10.2*
+#7 CACHED
+
+#8 [4/6] RUN git clone --depth 1 https://github.com/lzfse/lzfse /tmp/lzfse && cmake -S /tmp/lzfse -B /tmp/lzfse/b   -DCMAKE_INSTALL_PREFIX=/usr/local && cmake --build /tmp/lzfse/b -j"$(nproc)" &&   cmake --install /tmp/lzfse/b && ldconfig && rm -rf /tmp/lzfse
+#8 CACHED
+
+#9 [2/6] RUN apt-get update && apt-get install -y --no-install-recommends   build-essential git curl ca-certificates meson ninja-build pkg-config python3 python3-pyasn1 python3-pyasn1-modules   unzip zip genisoimage openssh-client netcat-openbsd file cmake gperf bison flex   autoconf automake libtool gettext autopoint libglib2.0-dev libpixman-1-dev libslirp-dev   libgnutls28-dev libfdt-dev libusb-1.0-0-dev libpng-dev libjpeg62-turbo-dev zlib1g-dev   libbz2-dev liblzma-dev libzstd-dev libcurl4-openssl-dev libssl-dev libplist-dev   libzip-dev libreadline-dev libgmp-dev libncurses-dev && rm -rf /var/lib/apt/lists/*
+#9 CACHED
+
+#10 [6/6] WORKDIR /work
+#10 CACHED
+
+#11 exporting to image
+#11 exporting layers done
+#11 exporting manifest sha256:9f467377c9b52d40927180dfcff44c2aeae77719e12839c3097beea4f2f15998 done
+#11 exporting config sha256:0d664e44f4e515a4e5653657a714d025a336d4c479cd7beee1f7f09ce5ebdd6f done
+#11 exporting attestation manifest sha256:958981621c4ef6c23fdb053e3faf9f9054d1c18fe95314759be8c190d40b39d8 0.0s done
+#11 exporting manifest list sha256:a02ce835caf06c49f3e88c533d6519c25d8002e541018035372f8666aaff7ac6 0.0s done
+#11 naming to docker.io/library/inferno-builder:latest done
+#11 unpacking to docker.io/library/inferno-builder:latest done
+#11 DONE 0.1s
+Inferno HEAD: cc4302a99167abec69b714cfd00c38caece7e7de
+QEMU emulator version ChefKissInferno-1.0.0rc1_QEMU-10.2.2_10.1.3_hybrid
+sepi
+none
+
+=== Waiting for companion SSH (first boot installs packages; can take 10+ min) ===
+idevicerestore 1.0.0-git-60192e9 (libirecovery 1.3.1, libtatsu 1.1.0)
+TRIGGER_ARMED
+info: iOS 14.0.0
+info: Kernel virtual low: 0xfffffff006000000
+info: Kernel virtual high: 0xfffffff00a4cd4f0
+warning: ck_kp_root_auth_callback: failed to find pacibsp, trying to find old logic
+info: `bypass root authentication` patch applied in `__TEXT_EXEC`.
+info: `allow mounting root as R/W` patch applied in `__TEXT_EXEC`.
+`bypass root hash authentication` patch did not apply in `__TEXT_EXEC`.
+info: `disable APFS snapshots` patch applied in `__TEXT`.
+info: `allow SHA1 signatures in AMFI` patch applied in `__TEXT_EXEC`.
+`all binaries in TrustCache (AMFI)` patch did not apply in `__TEXT_EXEC`.
+info: `increase SCOT size to 0x10000 to use it as TRAC` patch applied in `__TEXT_EXEC`.
+info: `allow unsigned firmware in img4_firmware_evaluate` patch applied in `__TEXT_EXEC`.
+`allow remounting rootfs, union mounts (old)` patch did not apply in `__TEXT_EXEC`.
+info: `allow remounting rootfs, union mounts (new)` patch applied in `__TEXT_EXEC`.
+info: `force enable kprintf` patch applied in `__TEXT_EXEC`.
+`disable AMX (new)` patch did not apply in `__TEXT_EXEC`.
+info: `disable AMX` patch applied in `__TEXT_EXEC`.
+info: `bypass code signature checks` patch applied in `__TEXT_EXEC`.
+info: `enable hactivation` patch applied in `__TEXT`.
+info: ck_kp_tc_callback: found AMFI (Routine)
+info: `all binaries in trustcache` patch applied in `__PPLTEXT`.
+info: `bypass pmap_cs_enforce` patch applied in `__PPLTEXT`.
+warning: `reg` len mismatch; wanted: 8, actual: 16
+warning: `reg` len mismatch; wanted: 8, actual: 32
+warning: `interrupts` len mismatch; wanted: 4, actual: 108
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+warning: `interrupts` len mismatch; wanted: 4, actual: 104
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+warning: `interrupts` len mismatch; wanted: 4, actual: 108
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+audio: open mca.out, freq 44100, nchannels 2, fmt 3
+info: `memcmp_validstrs30` patch applied in `seprom`.
+info: `memcmp_validstrs14` patch applied in `seprom`.
+info: `verify_rsa_signature` patch applied in `seprom`.
+info: Boot Mode: 0
+info: Auto Boot: false
+info: Boot Args: [-restore rd=md0 nand-enable-reformat=1 debug=0x14e serial=3 wdt=-1]
+info: TrustCache Physical Base: 0x0000000801000000
+info: Kernel Virtual Base: 0xfffffff006000000
+info: Kernel Physical Base: 0x0000000800000000
+info: Kernel Virtual Slide: 0x0000000000000000
+info: Kernel Physical Slide: 0x0000000000000000
+info: Kernel Entry Point: 0x00000008021204e8
+info: TZ0 Physical Base: 0x000000080c000000
+info: SEPFW Physical Base: 0x000000081b000000
+info: SEPFW Size: 0x0000000001000000
+info: Device Tree Physical Base: 0x000000081c004000
+info: Device Tree Virtual Base: 0xfffffff022004000
+info: Device Tree Size: 0x0000000000024000
+info: Top Of Kernel Data: 0x000000081c028000
+info: Memory Size: 0x0000000077cc8000
+
+=== Restore attempt 1: watching the guest boot first (watchdog check), then the restore itself ===
+
+=== Restore running (this is the slow part — progress: tail of guest serial log every minute) ===
+Wed Nov 11 18:19:20 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Warning>: Service exited with abnormal code: 78
+Wed Nov 11 18:19:20 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Warning>: Service exited with abnormal code: 78
+hfs: unmount initiated on AzulSeed18A5351d.arm64eCustomerRamDisk on device b(3, 0)
+guest watchdog-panicked mid-restore
+
+=== Guest died during restore attempt 1 — killing it and retrying from a fresh boot ===
+guest stopped
+
+=== Restore attempt 2 of 10 — relaunching the guest ===
+TRIGGER_ARMED
+info: iOS 14.0.0
+info: Kernel virtual low: 0xfffffff006000000
+info: Kernel virtual high: 0xfffffff00a4cd4f0
+warning: ck_kp_root_auth_callback: failed to find pacibsp, trying to find old logic
+info: `bypass root authentication` patch applied in `__TEXT_EXEC`.
+info: `allow mounting root as R/W` patch applied in `__TEXT_EXEC`.
+`bypass root hash authentication` patch did not apply in `__TEXT_EXEC`.
+info: `disable APFS snapshots` patch applied in `__TEXT`.
+info: `allow SHA1 signatures in AMFI` patch applied in `__TEXT_EXEC`.
+`all binaries in TrustCache (AMFI)` patch did not apply in `__TEXT_EXEC`.
+info: `increase SCOT size to 0x10000 to use it as TRAC` patch applied in `__TEXT_EXEC`.
+info: `allow unsigned firmware in img4_firmware_evaluate` patch applied in `__TEXT_EXEC`.
+`allow remounting rootfs, union mounts (old)` patch did not apply in `__TEXT_EXEC`.
+info: `allow remounting rootfs, union mounts (new)` patch applied in `__TEXT_EXEC`.
+info: `force enable kprintf` patch applied in `__TEXT_EXEC`.
+`disable AMX (new)` patch did not apply in `__TEXT_EXEC`.
+info: `disable AMX` patch applied in `__TEXT_EXEC`.
+info: `bypass code signature checks` patch applied in `__TEXT_EXEC`.
+info: `enable hactivation` patch applied in `__TEXT`.
+info: ck_kp_tc_callback: found AMFI (Routine)
+info: `all binaries in trustcache` patch applied in `__PPLTEXT`.
+info: `bypass pmap_cs_enforce` patch applied in `__PPLTEXT`.
+warning: `reg` len mismatch; wanted: 8, actual: 16
+warning: `reg` len mismatch; wanted: 8, actual: 32
+warning: `interrupts` len mismatch; wanted: 4, actual: 108
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+warning: `interrupts` len mismatch; wanted: 4, actual: 104
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+warning: `interrupts` len mismatch; wanted: 4, actual: 108
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+audio: open mca.out, freq 44100, nchannels 2, fmt 3
+info: `memcmp_validstrs30` patch applied in `seprom`.
+info: `memcmp_validstrs14` patch applied in `seprom`.
+info: `verify_rsa_signature` patch applied in `seprom`.
+info: Boot Mode: 0
+info: Auto Boot: false
+info: Boot Args: [-restore rd=md0 nand-enable-reformat=1 debug=0x14e serial=3 wdt=-1]
+info: TrustCache Physical Base: 0x0000000801000000
+info: Kernel Virtual Base: 0xfffffff006000000
+info: Kernel Physical Base: 0x0000000800000000
+info: Kernel Virtual Slide: 0x0000000000000000
+info: Kernel Physical Slide: 0x0000000000000000
+info: Kernel Entry Point: 0x00000008021204e8
+info: TZ0 Physical Base: 0x000000080c000000
+info: SEPFW Physical Base: 0x000000081b000000
+info: SEPFW Size: 0x0000000001000000
+info: Device Tree Physical Base: 0x000000081c004000
+info: Device Tree Virtual Base: 0xfffffff022004000
+info: Device Tree Size: 0x0000000000024000
+info: Top Of Kernel Data: 0x000000081c028000
+info: Memory Size: 0x0000000077cc8000
+
+=== Restore attempt 2: watching the guest boot first (watchdog check), then the restore itself ===
+
+=== Restore running (this is the slow part — progress: tail of guest serial log every minute) ===
+Wed Nov 11 18:23:01 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Warning>: Service exited with abnormal code: 78
+Wed Nov 11 18:23:01 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Warning>: Service exited with abnormal code: 78
+hfs: unmount initiated on AzulSeed18A5351d.arm64eCustomerRamDisk on device b(3, 0)
+guest watchdog-panicked mid-restore
+
+=== Guest died during restore attempt 2 — killing it and retrying from a fresh boot ===
+guest stopped
+
+=== Restore attempt 3 of 10 — relaunching the guest ===
+TRIGGER_ARMED
+info: iOS 14.0.0
+info: Kernel virtual low: 0xfffffff006000000
+info: Kernel virtual high: 0xfffffff00a4cd4f0
+warning: ck_kp_root_auth_callback: failed to find pacibsp, trying to find old logic
+info: `bypass root authentication` patch applied in `__TEXT_EXEC`.
+info: `allow mounting root as R/W` patch applied in `__TEXT_EXEC`.
+`bypass root hash authentication` patch did not apply in `__TEXT_EXEC`.
+info: `disable APFS snapshots` patch applied in `__TEXT`.
+info: `allow SHA1 signatures in AMFI` patch applied in `__TEXT_EXEC`.
+`all binaries in TrustCache (AMFI)` patch did not apply in `__TEXT_EXEC`.
+info: `increase SCOT size to 0x10000 to use it as TRAC` patch applied in `__TEXT_EXEC`.
+info: `allow unsigned firmware in img4_firmware_evaluate` patch applied in `__TEXT_EXEC`.
+`allow remounting rootfs, union mounts (old)` patch did not apply in `__TEXT_EXEC`.
+info: `allow remounting rootfs, union mounts (new)` patch applied in `__TEXT_EXEC`.
+info: `force enable kprintf` patch applied in `__TEXT_EXEC`.
+`disable AMX (new)` patch did not apply in `__TEXT_EXEC`.
+info: `disable AMX` patch applied in `__TEXT_EXEC`.
+info: `bypass code signature checks` patch applied in `__TEXT_EXEC`.
+info: `enable hactivation` patch applied in `__TEXT`.
+info: ck_kp_tc_callback: found AMFI (Routine)
+info: `all binaries in trustcache` patch applied in `__PPLTEXT`.
+info: `bypass pmap_cs_enforce` patch applied in `__PPLTEXT`.
+warning: `reg` len mismatch; wanted: 8, actual: 16
+warning: `reg` len mismatch; wanted: 8, actual: 32
+warning: `interrupts` len mismatch; wanted: 4, actual: 108
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+warning: `interrupts` len mismatch; wanted: 4, actual: 104
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+warning: `interrupts` len mismatch; wanted: 4, actual: 108
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+audio: open mca.out, freq 44100, nchannels 2, fmt 3
+info: `memcmp_validstrs30` patch applied in `seprom`.
+info: `memcmp_validstrs14` patch applied in `seprom`.
+info: `verify_rsa_signature` patch applied in `seprom`.
+info: Boot Mode: 0
+info: Auto Boot: false
+info: Boot Args: [-restore rd=md0 nand-enable-reformat=1 debug=0x14e serial=3 wdt=-1]
+info: TrustCache Physical Base: 0x0000000801000000
+info: Kernel Virtual Base: 0xfffffff006000000
+info: Kernel Physical Base: 0x0000000800000000
+info: Kernel Virtual Slide: 0x0000000000000000
+info: Kernel Physical Slide: 0x0000000000000000
+info: Kernel Entry Point: 0x00000008021204e8
+info: TZ0 Physical Base: 0x000000080c000000
+info: SEPFW Physical Base: 0x000000081b000000
+info: SEPFW Size: 0x0000000001000000
+info: Device Tree Physical Base: 0x000000081c004000
+info: Device Tree Virtual Base: 0xfffffff022004000
+info: Device Tree Size: 0x0000000000024000
+info: Top Of Kernel Data: 0x000000081c028000
+info: Memory Size: 0x0000000077cc8000
+
+=== Restore attempt 3: watching the guest boot first (watchdog check), then the restore itself ===
+
+=== Restore running (this is the slow part — progress: tail of guest serial log every minute) ===
+Wed Nov 11 18:26:42 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Warning>: Service exited with abnormal code: 78
+Wed Nov 11 18:26:42 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Warning>: Service exited with abnormal code: 78
+hfs: unmount initiated on AzulSeed18A5351d.arm64eCustomerRamDisk on device b(3, 0)
+guest watchdog-panicked mid-restore
+
+=== Guest died during restore attempt 3 — killing it and retrying from a fresh boot ===
+guest stopped
+
+=== Restore attempt 4 of 10 — relaunching the guest ===
+TRIGGER_ARMED
+info: iOS 14.0.0
+info: Kernel virtual low: 0xfffffff006000000
+info: Kernel virtual high: 0xfffffff00a4cd4f0
+warning: ck_kp_root_auth_callback: failed to find pacibsp, trying to find old logic
+info: `bypass root authentication` patch applied in `__TEXT_EXEC`.
+info: `allow mounting root as R/W` patch applied in `__TEXT_EXEC`.
+`bypass root hash authentication` patch did not apply in `__TEXT_EXEC`.
+info: `disable APFS snapshots` patch applied in `__TEXT`.
+info: `allow SHA1 signatures in AMFI` patch applied in `__TEXT_EXEC`.
+`all binaries in TrustCache (AMFI)` patch did not apply in `__TEXT_EXEC`.
+info: `increase SCOT size to 0x10000 to use it as TRAC` patch applied in `__TEXT_EXEC`.
+info: `allow unsigned firmware in img4_firmware_evaluate` patch applied in `__TEXT_EXEC`.
+`allow remounting rootfs, union mounts (old)` patch did not apply in `__TEXT_EXEC`.
+info: `allow remounting rootfs, union mounts (new)` patch applied in `__TEXT_EXEC`.
+info: `force enable kprintf` patch applied in `__TEXT_EXEC`.
+`disable AMX (new)` patch did not apply in `__TEXT_EXEC`.
+info: `disable AMX` patch applied in `__TEXT_EXEC`.
+info: `bypass code signature checks` patch applied in `__TEXT_EXEC`.
+info: `enable hactivation` patch applied in `__TEXT`.
+info: ck_kp_tc_callback: found AMFI (Routine)
+info: `all binaries in trustcache` patch applied in `__PPLTEXT`.
+info: `bypass pmap_cs_enforce` patch applied in `__PPLTEXT`.
+warning: `reg` len mismatch; wanted: 8, actual: 16
+warning: `reg` len mismatch; wanted: 8, actual: 32
+warning: `interrupts` len mismatch; wanted: 4, actual: 108
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+warning: `interrupts` len mismatch; wanted: 4, actual: 104
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+warning: `interrupts` len mismatch; wanted: 4, actual: 108
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+audio: open mca.out, freq 44100, nchannels 2, fmt 3
+info: `memcmp_validstrs30` patch applied in `seprom`.
+info: `memcmp_validstrs14` patch applied in `seprom`.
+info: `verify_rsa_signature` patch applied in `seprom`.
+info: Boot Mode: 0
+info: Auto Boot: false
+info: Boot Args: [-restore rd=md0 nand-enable-reformat=1 debug=0x14e serial=3 wdt=-1]
+info: TrustCache Physical Base: 0x0000000801000000
+info: Kernel Virtual Base: 0xfffffff006000000
+info: Kernel Physical Base: 0x0000000800000000
+info: Kernel Virtual Slide: 0x0000000000000000
+info: Kernel Physical Slide: 0x0000000000000000
+info: Kernel Entry Point: 0x00000008021204e8
+info: TZ0 Physical Base: 0x000000080c000000
+info: SEPFW Physical Base: 0x000000081b000000
+info: SEPFW Size: 0x0000000001000000
+info: Device Tree Physical Base: 0x000000081c004000
+info: Device Tree Virtual Base: 0xfffffff022004000
+info: Device Tree Size: 0x0000000000024000
+info: Top Of Kernel Data: 0x000000081c028000
+info: Memory Size: 0x0000000077cc8000
+
+=== Restore attempt 4: watching the guest boot first (watchdog check), then the restore itself ===
+
+=== Restore running (this is the slow part — progress: tail of guest serial log every minute) ===
+Wed Nov 11 18:30:21 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Warning>: Service exited with abnormal code: 78
+Wed Nov 11 18:30:21 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Warning>: Service exited with abnormal code: 78
+hfs: unmount initiated on AzulSeed18A5351d.arm64eCustomerRamDisk on device b(3, 0)
+guest watchdog-panicked mid-restore
+
+=== Guest died during restore attempt 4 — killing it and retrying from a fresh boot ===
+guest stopped
+
+=== Restore attempt 5 of 10 — relaunching the guest ===
+TRIGGER_ARMED
+info: iOS 14.0.0
+info: Kernel virtual low: 0xfffffff006000000
+info: Kernel virtual high: 0xfffffff00a4cd4f0
+warning: ck_kp_root_auth_callback: failed to find pacibsp, trying to find old logic
+info: `bypass root authentication` patch applied in `__TEXT_EXEC`.
+info: `allow mounting root as R/W` patch applied in `__TEXT_EXEC`.
+`bypass root hash authentication` patch did not apply in `__TEXT_EXEC`.
+info: `disable APFS snapshots` patch applied in `__TEXT`.
+info: `allow SHA1 signatures in AMFI` patch applied in `__TEXT_EXEC`.
+`all binaries in TrustCache (AMFI)` patch did not apply in `__TEXT_EXEC`.
+info: `increase SCOT size to 0x10000 to use it as TRAC` patch applied in `__TEXT_EXEC`.
+info: `allow unsigned firmware in img4_firmware_evaluate` patch applied in `__TEXT_EXEC`.
+`allow remounting rootfs, union mounts (old)` patch did not apply in `__TEXT_EXEC`.
+info: `allow remounting rootfs, union mounts (new)` patch applied in `__TEXT_EXEC`.
+info: `force enable kprintf` patch applied in `__TEXT_EXEC`.
+`disable AMX (new)` patch did not apply in `__TEXT_EXEC`.
+info: `disable AMX` patch applied in `__TEXT_EXEC`.
+info: `bypass code signature checks` patch applied in `__TEXT_EXEC`.
+info: `enable hactivation` patch applied in `__TEXT`.
+info: ck_kp_tc_callback: found AMFI (Routine)
+info: `all binaries in trustcache` patch applied in `__PPLTEXT`.
+info: `bypass pmap_cs_enforce` patch applied in `__PPLTEXT`.
+warning: `reg` len mismatch; wanted: 8, actual: 16
+warning: `reg` len mismatch; wanted: 8, actual: 32
+warning: `interrupts` len mismatch; wanted: 4, actual: 108
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+warning: `interrupts` len mismatch; wanted: 4, actual: 104
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+warning: `interrupts` len mismatch; wanted: 4, actual: 108
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+audio: open mca.out, freq 44100, nchannels 2, fmt 3
+info: `memcmp_validstrs30` patch applied in `seprom`.
+info: `memcmp_validstrs14` patch applied in `seprom`.
+info: `verify_rsa_signature` patch applied in `seprom`.
+info: Boot Mode: 0
+info: Auto Boot: false
+info: Boot Args: [-restore rd=md0 nand-enable-reformat=1 debug=0x14e serial=3 wdt=-1]
+info: TrustCache Physical Base: 0x0000000801000000
+info: Kernel Virtual Base: 0xfffffff006000000
+info: Kernel Physical Base: 0x0000000800000000
+info: Kernel Virtual Slide: 0x0000000000000000
+info: Kernel Physical Slide: 0x0000000000000000
+info: Kernel Entry Point: 0x00000008021204e8
+info: TZ0 Physical Base: 0x000000080c000000
+info: SEPFW Physical Base: 0x000000081b000000
+info: SEPFW Size: 0x0000000001000000
+info: Device Tree Physical Base: 0x000000081c004000
+info: Device Tree Virtual Base: 0xfffffff022004000
+info: Device Tree Size: 0x0000000000024000
+info: Top Of Kernel Data: 0x000000081c028000
+info: Memory Size: 0x0000000077cc8000
+
+=== Restore attempt 5: watching the guest boot first (watchdog check), then the restore itself ===
+
+=== Restore running (this is the slow part — progress: tail of guest serial log every minute) ===
+Wed Nov 11 18:34:01 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Warning>: Service exited with abnormal code: 78
+Wed Nov 11 18:34:01 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Warning>: Service exited with abnormal code: 78
+hfs: unmount initiated on AzulSeed18A5351d.arm64eCustomerRamDisk on device b(3, 0)
+guest watchdog-panicked mid-restore
+
+=== Guest died during restore attempt 5 — killing it and retrying from a fresh boot ===
+guest stopped
+
+=== Restore attempt 6 of 10 — relaunching the guest ===
+TRIGGER_ARMED
+info: iOS 14.0.0
+info: Kernel virtual low: 0xfffffff006000000
+info: Kernel virtual high: 0xfffffff00a4cd4f0
+warning: ck_kp_root_auth_callback: failed to find pacibsp, trying to find old logic
+info: `bypass root authentication` patch applied in `__TEXT_EXEC`.
+info: `allow mounting root as R/W` patch applied in `__TEXT_EXEC`.
+`bypass root hash authentication` patch did not apply in `__TEXT_EXEC`.
+info: `disable APFS snapshots` patch applied in `__TEXT`.
+info: `allow SHA1 signatures in AMFI` patch applied in `__TEXT_EXEC`.
+`all binaries in TrustCache (AMFI)` patch did not apply in `__TEXT_EXEC`.
+info: `increase SCOT size to 0x10000 to use it as TRAC` patch applied in `__TEXT_EXEC`.
+info: `allow unsigned firmware in img4_firmware_evaluate` patch applied in `__TEXT_EXEC`.
+`allow remounting rootfs, union mounts (old)` patch did not apply in `__TEXT_EXEC`.
+info: `allow remounting rootfs, union mounts (new)` patch applied in `__TEXT_EXEC`.
+info: `force enable kprintf` patch applied in `__TEXT_EXEC`.
+`disable AMX (new)` patch did not apply in `__TEXT_EXEC`.
+info: `disable AMX` patch applied in `__TEXT_EXEC`.
+info: `bypass code signature checks` patch applied in `__TEXT_EXEC`.
+info: `enable hactivation` patch applied in `__TEXT`.
+info: ck_kp_tc_callback: found AMFI (Routine)
+info: `all binaries in trustcache` patch applied in `__PPLTEXT`.
+info: `bypass pmap_cs_enforce` patch applied in `__PPLTEXT`.
+warning: `reg` len mismatch; wanted: 8, actual: 16
+warning: `reg` len mismatch; wanted: 8, actual: 32
+warning: `interrupts` len mismatch; wanted: 4, actual: 108
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+warning: `interrupts` len mismatch; wanted: 4, actual: 104
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+warning: `interrupts` len mismatch; wanted: 4, actual: 108
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+audio: open mca.out, freq 44100, nchannels 2, fmt 3
+info: `memcmp_validstrs30` patch applied in `seprom`.
+info: `memcmp_validstrs14` patch applied in `seprom`.
+info: `verify_rsa_signature` patch applied in `seprom`.
+info: Boot Mode: 0
+info: Auto Boot: false
+info: Boot Args: [-restore rd=md0 nand-enable-reformat=1 debug=0x14e serial=3 wdt=-1]
+info: TrustCache Physical Base: 0x0000000801000000
+info: Kernel Virtual Base: 0xfffffff006000000
+info: Kernel Physical Base: 0x0000000800000000
+info: Kernel Virtual Slide: 0x0000000000000000
+info: Kernel Physical Slide: 0x0000000000000000
+info: Kernel Entry Point: 0x00000008021204e8
+info: TZ0 Physical Base: 0x000000080c000000
+info: SEPFW Physical Base: 0x000000081b000000
+info: SEPFW Size: 0x0000000001000000
+info: Device Tree Physical Base: 0x000000081c004000
+info: Device Tree Virtual Base: 0xfffffff022004000
+info: Device Tree Size: 0x0000000000024000
+info: Top Of Kernel Data: 0x000000081c028000
+info: Memory Size: 0x0000000077cc8000
+
+=== Restore attempt 6: watching the guest boot first (watchdog check), then the restore itself ===
+
+=== Restore running (this is the slow part — progress: tail of guest serial log every minute) ===
+Wed Nov 11 18:37:42 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Warning>: Service exited with abnormal code: 78
+Wed Nov 11 18:37:42 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Warning>: Service exited with abnormal code: 78
+hfs: unmount initiated on AzulSeed18A5351d.arm64eCustomerRamDisk on device b(3, 0)
+guest watchdog-panicked mid-restore
+
+=== Guest died during restore attempt 6 — killing it and retrying from a fresh boot ===
+guest stopped
+
+=== Restore attempt 7 of 10 — relaunching the guest ===
+TRIGGER_ARMED
+info: iOS 14.0.0
+info: Kernel virtual low: 0xfffffff006000000
+info: Kernel virtual high: 0xfffffff00a4cd4f0
+warning: ck_kp_root_auth_callback: failed to find pacibsp, trying to find old logic
+info: `bypass root authentication` patch applied in `__TEXT_EXEC`.
+info: `allow mounting root as R/W` patch applied in `__TEXT_EXEC`.
+`bypass root hash authentication` patch did not apply in `__TEXT_EXEC`.
+info: `disable APFS snapshots` patch applied in `__TEXT`.
+info: `allow SHA1 signatures in AMFI` patch applied in `__TEXT_EXEC`.
+`all binaries in TrustCache (AMFI)` patch did not apply in `__TEXT_EXEC`.
+info: `increase SCOT size to 0x10000 to use it as TRAC` patch applied in `__TEXT_EXEC`.
+info: `allow unsigned firmware in img4_firmware_evaluate` patch applied in `__TEXT_EXEC`.
+`allow remounting rootfs, union mounts (old)` patch did not apply in `__TEXT_EXEC`.
+info: `allow remounting rootfs, union mounts (new)` patch applied in `__TEXT_EXEC`.
+info: `force enable kprintf` patch applied in `__TEXT_EXEC`.
+`disable AMX (new)` patch did not apply in `__TEXT_EXEC`.
+info: `disable AMX` patch applied in `__TEXT_EXEC`.
+info: `bypass code signature checks` patch applied in `__TEXT_EXEC`.
+info: `enable hactivation` patch applied in `__TEXT`.
+info: ck_kp_tc_callback: found AMFI (Routine)
+info: `all binaries in trustcache` patch applied in `__PPLTEXT`.
+info: `bypass pmap_cs_enforce` patch applied in `__PPLTEXT`.
+warning: `reg` len mismatch; wanted: 8, actual: 16
+warning: `reg` len mismatch; wanted: 8, actual: 32
+warning: `interrupts` len mismatch; wanted: 4, actual: 108
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+warning: `interrupts` len mismatch; wanted: 4, actual: 104
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+warning: `interrupts` len mismatch; wanted: 4, actual: 108
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+audio: open mca.out, freq 44100, nchannels 2, fmt 3
+info: `memcmp_validstrs30` patch applied in `seprom`.
+info: `memcmp_validstrs14` patch applied in `seprom`.
+info: `verify_rsa_signature` patch applied in `seprom`.
+info: Boot Mode: 0
+info: Auto Boot: false
+info: Boot Args: [-restore rd=md0 nand-enable-reformat=1 debug=0x14e serial=3 wdt=-1]
+info: TrustCache Physical Base: 0x0000000801000000
+info: Kernel Virtual Base: 0xfffffff006000000
+info: Kernel Physical Base: 0x0000000800000000
+info: Kernel Virtual Slide: 0x0000000000000000
+info: Kernel Physical Slide: 0x0000000000000000
+info: Kernel Entry Point: 0x00000008021204e8
+info: TZ0 Physical Base: 0x000000080c000000
+info: SEPFW Physical Base: 0x000000081b000000
+info: SEPFW Size: 0x0000000001000000
+info: Device Tree Physical Base: 0x000000081c004000
+info: Device Tree Virtual Base: 0xfffffff022004000
+info: Device Tree Size: 0x0000000000024000
+info: Top Of Kernel Data: 0x000000081c028000
+info: Memory Size: 0x0000000077cc8000
+
+=== Restore attempt 7: watching the guest boot first (watchdog check), then the restore itself ===
+
+=== Restore running (this is the slow part — progress: tail of guest serial log every minute) ===
+Wed Nov 11 18:41:23 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Warning>: Service exited with abnormal code: 78
+Wed Nov 11 18:41:23 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Warning>: Service exited with abnormal code: 78
+hfs: unmount initiated on AzulSeed18A5351d.arm64eCustomerRamDisk on device b(3, 0)
+guest watchdog-panicked mid-restore
+
+=== Guest died during restore attempt 7 — killing it and retrying from a fresh boot ===
+guest stopped
+
+=== Restore attempt 8 of 10 — relaunching the guest ===
+TRIGGER_ARMED
+info: iOS 14.0.0
+info: Kernel virtual low: 0xfffffff006000000
+info: Kernel virtual high: 0xfffffff00a4cd4f0
+warning: ck_kp_root_auth_callback: failed to find pacibsp, trying to find old logic
+info: `bypass root authentication` patch applied in `__TEXT_EXEC`.
+info: `allow mounting root as R/W` patch applied in `__TEXT_EXEC`.
+`bypass root hash authentication` patch did not apply in `__TEXT_EXEC`.
+info: `disable APFS snapshots` patch applied in `__TEXT`.
+info: `allow SHA1 signatures in AMFI` patch applied in `__TEXT_EXEC`.
+`all binaries in TrustCache (AMFI)` patch did not apply in `__TEXT_EXEC`.
+info: `increase SCOT size to 0x10000 to use it as TRAC` patch applied in `__TEXT_EXEC`.
+info: `allow unsigned firmware in img4_firmware_evaluate` patch applied in `__TEXT_EXEC`.
+`allow remounting rootfs, union mounts (old)` patch did not apply in `__TEXT_EXEC`.
+info: `allow remounting rootfs, union mounts (new)` patch applied in `__TEXT_EXEC`.
+info: `force enable kprintf` patch applied in `__TEXT_EXEC`.
+`disable AMX (new)` patch did not apply in `__TEXT_EXEC`.
+info: `disable AMX` patch applied in `__TEXT_EXEC`.
+info: `bypass code signature checks` patch applied in `__TEXT_EXEC`.
+info: `enable hactivation` patch applied in `__TEXT`.
+info: ck_kp_tc_callback: found AMFI (Routine)
+info: `all binaries in trustcache` patch applied in `__PPLTEXT`.
+info: `bypass pmap_cs_enforce` patch applied in `__PPLTEXT`.
+warning: `reg` len mismatch; wanted: 8, actual: 16
+warning: `reg` len mismatch; wanted: 8, actual: 32
+warning: `interrupts` len mismatch; wanted: 4, actual: 108
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+warning: `interrupts` len mismatch; wanted: 4, actual: 104
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+warning: `interrupts` len mismatch; wanted: 4, actual: 108
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+audio: open mca.out, freq 44100, nchannels 2, fmt 3
+info: `memcmp_validstrs30` patch applied in `seprom`.
+info: `memcmp_validstrs14` patch applied in `seprom`.
+info: `verify_rsa_signature` patch applied in `seprom`.
+info: Boot Mode: 0
+info: Auto Boot: false
+info: Boot Args: [-restore rd=md0 nand-enable-reformat=1 debug=0x14e serial=3 wdt=-1]
+info: TrustCache Physical Base: 0x0000000801000000
+info: Kernel Virtual Base: 0xfffffff006000000
+info: Kernel Physical Base: 0x0000000800000000
+info: Kernel Virtual Slide: 0x0000000000000000
+info: Kernel Physical Slide: 0x0000000000000000
+info: Kernel Entry Point: 0x00000008021204e8
+info: TZ0 Physical Base: 0x000000080c000000
+info: SEPFW Physical Base: 0x000000081b000000
+info: SEPFW Size: 0x0000000001000000
+info: Device Tree Physical Base: 0x000000081c004000
+info: Device Tree Virtual Base: 0xfffffff022004000
+info: Device Tree Size: 0x0000000000024000
+info: Top Of Kernel Data: 0x000000081c028000
+info: Memory Size: 0x0000000077cc8000
+
+=== Restore attempt 8: watching the guest boot first (watchdog check), then the restore itself ===
+
+=== Restore running (this is the slow part — progress: tail of guest serial log every minute) ===
+Wed Nov 11 18:45:04 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Warning>: Service exited with abnormal code: 78
+Wed Nov 11 18:45:04 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Warning>: Service exited with abnormal code: 78
+hfs: unmount initiated on AzulSeed18A5351d.arm64eCustomerRamDisk on device b(3, 0)
+guest watchdog-panicked mid-restore
+
+=== Guest died during restore attempt 8 — killing it and retrying from a fresh boot ===
+guest stopped
+
+=== Restore attempt 9 of 10 — relaunching the guest ===
+TRIGGER_ARMED
+info: iOS 14.0.0
+info: Kernel virtual low: 0xfffffff006000000
+info: Kernel virtual high: 0xfffffff00a4cd4f0
+warning: ck_kp_root_auth_callback: failed to find pacibsp, trying to find old logic
+info: `bypass root authentication` patch applied in `__TEXT_EXEC`.
+info: `allow mounting root as R/W` patch applied in `__TEXT_EXEC`.
+`bypass root hash authentication` patch did not apply in `__TEXT_EXEC`.
+info: `disable APFS snapshots` patch applied in `__TEXT`.
+info: `allow SHA1 signatures in AMFI` patch applied in `__TEXT_EXEC`.
+`all binaries in TrustCache (AMFI)` patch did not apply in `__TEXT_EXEC`.
+info: `increase SCOT size to 0x10000 to use it as TRAC` patch applied in `__TEXT_EXEC`.
+info: `allow unsigned firmware in img4_firmware_evaluate` patch applied in `__TEXT_EXEC`.
+`allow remounting rootfs, union mounts (old)` patch did not apply in `__TEXT_EXEC`.
+info: `allow remounting rootfs, union mounts (new)` patch applied in `__TEXT_EXEC`.
+info: `force enable kprintf` patch applied in `__TEXT_EXEC`.
+`disable AMX (new)` patch did not apply in `__TEXT_EXEC`.
+info: `disable AMX` patch applied in `__TEXT_EXEC`.
+info: `bypass code signature checks` patch applied in `__TEXT_EXEC`.
+info: `enable hactivation` patch applied in `__TEXT`.
+info: ck_kp_tc_callback: found AMFI (Routine)
+info: `all binaries in trustcache` patch applied in `__PPLTEXT`.
+info: `bypass pmap_cs_enforce` patch applied in `__PPLTEXT`.
+warning: `reg` len mismatch; wanted: 8, actual: 16
+warning: `reg` len mismatch; wanted: 8, actual: 32
+warning: `interrupts` len mismatch; wanted: 4, actual: 108
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+warning: `interrupts` len mismatch; wanted: 4, actual: 104
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+warning: `interrupts` len mismatch; wanted: 4, actual: 108
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+audio: open mca.out, freq 44100, nchannels 2, fmt 3
+info: `memcmp_validstrs30` patch applied in `seprom`.
+info: `memcmp_validstrs14` patch applied in `seprom`.
+info: `verify_rsa_signature` patch applied in `seprom`.
+info: Boot Mode: 0
+info: Auto Boot: false
+info: Boot Args: [-restore rd=md0 nand-enable-reformat=1 debug=0x14e serial=3 wdt=-1]
+info: TrustCache Physical Base: 0x0000000801000000
+info: Kernel Virtual Base: 0xfffffff006000000
+info: Kernel Physical Base: 0x0000000800000000
+info: Kernel Virtual Slide: 0x0000000000000000
+info: Kernel Physical Slide: 0x0000000000000000
+info: Kernel Entry Point: 0x00000008021204e8
+info: TZ0 Physical Base: 0x000000080c000000
+info: SEPFW Physical Base: 0x000000081b000000
+info: SEPFW Size: 0x0000000001000000
+info: Device Tree Physical Base: 0x000000081c004000
+info: Device Tree Virtual Base: 0xfffffff022004000
+info: Device Tree Size: 0x0000000000024000
+info: Top Of Kernel Data: 0x000000081c028000
+info: Memory Size: 0x0000000077cc8000
+
+=== Restore attempt 9: watching the guest boot first (watchdog check), then the restore itself ===
+
+=== Restore running (this is the slow part — progress: tail of guest serial log every minute) ===
+Wed Nov 11 18:48:49 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Warning>: Service exited with abnormal code: 78
+Wed Nov 11 18:48:49 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Warning>: Service exited with abnormal code: 78
+hfs: unmount initiated on AzulSeed18A5351d.arm64eCustomerRamDisk on device b(3, 0)
+guest watchdog-panicked mid-restore
+
+=== Guest died during restore attempt 9 — killing it and retrying from a fresh boot ===
+guest stopped
+
+=== Restore attempt 10 of 10 — relaunching the guest ===
+TRIGGER_ARMED
+info: iOS 14.0.0
+info: Kernel virtual low: 0xfffffff006000000
+info: Kernel virtual high: 0xfffffff00a4cd4f0
+warning: ck_kp_root_auth_callback: failed to find pacibsp, trying to find old logic
+info: `bypass root authentication` patch applied in `__TEXT_EXEC`.
+info: `allow mounting root as R/W` patch applied in `__TEXT_EXEC`.
+`bypass root hash authentication` patch did not apply in `__TEXT_EXEC`.
+info: `disable APFS snapshots` patch applied in `__TEXT`.
+info: `allow SHA1 signatures in AMFI` patch applied in `__TEXT_EXEC`.
+`all binaries in TrustCache (AMFI)` patch did not apply in `__TEXT_EXEC`.
+info: `increase SCOT size to 0x10000 to use it as TRAC` patch applied in `__TEXT_EXEC`.
+info: `allow unsigned firmware in img4_firmware_evaluate` patch applied in `__TEXT_EXEC`.
+`allow remounting rootfs, union mounts (old)` patch did not apply in `__TEXT_EXEC`.
+info: `allow remounting rootfs, union mounts (new)` patch applied in `__TEXT_EXEC`.
+info: `force enable kprintf` patch applied in `__TEXT_EXEC`.
+`disable AMX (new)` patch did not apply in `__TEXT_EXEC`.
+info: `disable AMX` patch applied in `__TEXT_EXEC`.
+info: `bypass code signature checks` patch applied in `__TEXT_EXEC`.
+info: `enable hactivation` patch applied in `__TEXT`.
+info: ck_kp_tc_callback: found AMFI (Routine)
+info: `all binaries in trustcache` patch applied in `__PPLTEXT`.
+info: `bypass pmap_cs_enforce` patch applied in `__PPLTEXT`.
+warning: `reg` len mismatch; wanted: 8, actual: 16
+warning: `reg` len mismatch; wanted: 8, actual: 32
+warning: `interrupts` len mismatch; wanted: 4, actual: 108
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+warning: `interrupts` len mismatch; wanted: 4, actual: 104
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+warning: `interrupts` len mismatch; wanted: 4, actual: 108
+warning: `interrupt-parent` len mismatch; wanted: 4, actual: 12
+audio: open mca.out, freq 44100, nchannels 2, fmt 3
+info: `memcmp_validstrs30` patch applied in `seprom`.
+info: `memcmp_validstrs14` patch applied in `seprom`.
+info: `verify_rsa_signature` patch applied in `seprom`.
+info: Boot Mode: 0
+info: Auto Boot: false
+info: Boot Args: [-restore rd=md0 nand-enable-reformat=1 debug=0x14e serial=3 wdt=-1]
+info: TrustCache Physical Base: 0x0000000801000000
+info: Kernel Virtual Base: 0xfffffff006000000
+info: Kernel Physical Base: 0x0000000800000000
+info: Kernel Virtual Slide: 0x0000000000000000
+info: Kernel Physical Slide: 0x0000000000000000
+info: Kernel Entry Point: 0x00000008021204e8
+info: TZ0 Physical Base: 0x000000080c000000
+info: SEPFW Physical Base: 0x000000081b000000
+info: SEPFW Size: 0x0000000001000000
+info: Device Tree Physical Base: 0x000000081c004000
+info: Device Tree Virtual Base: 0xfffffff022004000
+info: Device Tree Size: 0x0000000000024000
+info: Top Of Kernel Data: 0x000000081c028000
+info: Memory Size: 0x0000000077cc8000
+
+=== Restore attempt 10: watching the guest boot first (watchdog check), then the restore itself ===
+
+=== Restore running (this is the slow part — progress: tail of guest serial log every minute) ===
+Wed Nov 11 18:52:31 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Warning>: Service exited with abnormal code: 78
+Wed Nov 11 18:52:31 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Warning>: Service exited with abnormal code: 78
+hfs: unmount initiated on AzulSeed18A5351d.arm64eCustomerRamDisk on device b(3, 0)
+guest watchdog-panicked mid-restore
+
+=== Guest died during restore attempt 10 — killing it and retrying from a fresh boot ===
+guest stopped
+
+STOPPED: restore did not complete after 10 guest attempts — the guest kept watchdog-panicking (this emulator's known flaky failure). Running this script again resumes at the restore and tries again.
