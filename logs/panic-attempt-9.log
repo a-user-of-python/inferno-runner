@@ -1,241 +1,243 @@
 iBoot version: ChefKiss Inferno
 corecrypto_kext_start called
-FIPSPOST_KEXT [13724768] fipspost_post:158: PASSED: (4 ms) - fipspost_post_integrity
-FIPSPOST_KEXT [14086446] fipspost_post:164: PASSED: (2 ms) - fipspost_post_hmac
-FIPSPOST_KEXT [14366115] fipspost_post:165: PASSED: (0 ms) - fipspost_post_aes_ecb
-FIPSPOST_KEXT [14637174] fipspost_post:166: PASSED: (0 ms) - fipspost_post_aes_cbc
-FIPSPOST_KEXT [15620950] fipspost_post:167: PASSED: (30 ms) - fipspost_post_rsa_sig
-FIPSPOST_KEXT [16316780] fipspost_post:168: PASSED: (16 ms) - fipspost_post_ecdsa
-FIPSPOST_KEXT [16652584] fipspost_post:169: PASSED: (2 ms) - fipspost_post_ecdh
-FIPSPOST_KEXT [16926557] fipspost_post:170: PASSED: (0 ms) - fipspost_post_drbg_ctr
-FIPSPOST_KEXT [17265569] fipspost_post:171: PASSED: (1 ms) - fipspost_post_aes_ccm
-FIPSPOST_KEXT [18580612] fipspost_post:173: PASSED: (42 ms) - fipspost_post_pbkdf
-FIPSPOST_KEXT [18905765] fipspost_post:174: PASSED: (0 ms) - fipspost_post_kdf_ctr
-FIPSPOST_KEXT [19236616] fipspost_post:175: PASSED: (1 ms) - fipspost_post_aes_gcm
-FIPSPOST_KEXT [19549588] fipspost_post:176: PASSED: (1 ms) - fipspost_post_aes_xts
-FIPSPOST_KEXT [19888805] fipspost_post:177: PASSED: (2 ms) - fipspost_post_tdes_cbc
-FIPSPOST_KEXT [20228622] fipspost_post:178: PASSED: (1 ms) - fipspost_post_drbg_hmac
-FIPSPOST_KEXT [20536247] fipspost_post:201: all tests PASSED (288 ms)
+FIPSPOST_KEXT [14564138] fipspost_post:158: PASSED: (5 ms) - fipspost_post_integrity
+FIPSPOST_KEXT [14957194] fipspost_post:164: PASSED: (2 ms) - fipspost_post_hmac
+FIPSPOST_KEXT [15301338] fipspost_post:165: PASSED: (0 ms) - fipspost_post_aes_ecb
+FIPSPOST_KEXT [15607901] fipspost_post:166: PASSED: (0 ms) - fipspost_post_aes_cbc
+FIPSPOST_KEXT [16820616] fipspost_post:167: PASSED: (38 ms) - fipspost_post_rsa_sig
+FIPSPOST_KEXT [17586649] fipspost_post:168: PASSED: (18 ms) - fipspost_post_ecdsa
+FIPSPOST_KEXT [18024797] fipspost_post:169: PASSED: (3 ms) - fipspost_post_ecdh
+FIPSPOST_KEXT [18309715] fipspost_post:170: PASSED: (0 ms) - fipspost_post_drbg_ctr
+FIPSPOST_KEXT [18642209] fipspost_post:171: PASSED: (1 ms) - fipspost_post_aes_ccm
+FIPSPOST_KEXT [20062104] fipspost_post:173: PASSED: (46 ms) - fipspost_post_pbkdf
+FIPSPOST_KEXT [20386579] fipspost_post:174: PASSED: (0 ms) - fipspost_post_kdf_ctr
+FIPSPOST_KEXT [20716448] fipspost_post:175: PASSED: (1 ms) - fipspost_post_aes_gcm
+FIPSPOST_KEXT [21042134] fipspost_post:176: PASSED: (1 ms) - fipspost_post_aes_xts
+FIPSPOST_KEXT [21370450] fipspost_post:177: PASSED: (1 ms) - fipspost_post_tdes_cbc
+FIPSPOST_KEXT [21687571] fipspost_post:178: PASSED: (1 ms) - fipspost_post_drbg_hmac
+FIPSPOST_KEXT [21971149] fipspost_post:201: all tests PASSED (313 ms)
 Darwin Image4 Validator Version 3.0.0: Wed Aug 12 22:19:21 PDT 2020; root:AppleImage4-106.0.4.0.1~129/AppleImage4/RELEASE_ARM64E
 AppleImage4: failed to read nvram property: nonce-seeds: 2
 AppleImage4: error reading seeds: 2
 AMFI is running in RESEARCH mode!
-AppleT803xIO::start: chip-revision: C0
+AUC:[0xffffffe19bb973c0]::init(0xffffffeAppleT803xIO::start: chip-revision: C0
+19bbc1cc0)
 IOAccessoryManager::configureAccessoryPowerGated: dock-0pin: Configuring Accessory Power to (1)
 AppleARMBacklight::start: Using new Backlight Architecture 1
-AppleARMBacklight::start: no DBV offset data
 IOAccessoryDock0PinBuiltin::configureAccessoryPowerGated: PowerModeOff
 IOAccessoryDock0PinBuiltin::configureAccessoryPowerInternal: _powerState=1, _powerStateInternal=0, _sleeping=0, _accessoryPowerModeExtOffRequested 0
 IOAccessoryDock0PinBuiltin::configureAccessoryPowerInternal: !getAccessoryPowerReady(); set PowerModeOff?
 IOAccessoryDock0PinBuiltin::configureAccessoryPowerInternal: handleAccessoryPowerWillChange, confirm PowerModeOff
-AUC:[0xffffffe19b933af0]::init(0xffffffe19b95da90)
-
-AUC:[0xffffffe19b933af0]::probe(0xffffffe19b6f1aAppleT803xIO::start: this: <ptr>, ACCE virt addr: <ptr>, phys addr: 0x210f00000
-40, 0xffffffe803b53dac)
-AppleARMBacklight::start: no DBV max data
-AppleARMBacklight::start: _calibratedMaxCurrent=15000
 [ERROR] IOPort::_setSupportedTransportsForRegistryEntry(): Could not find transports-supported property! (entry: dock-0pin)
 
-AppleCredentialManager: init: called, instance = <ptr>.
-ACMFirstAppleT803xIO::start: this: <ptr>, ACCP virt addr: <ptr>, phys addr: 0x211f00000
-ResponderKernelService: init: called, .
-AppleARMBacklight::start: _calibratedMidCurrent=3750
+AUC:[0xffffffe19bb973c0]::probe(0xffffffe19b956080, 0xffffffe803db3dac)
+
+AppleT803xIO::start: this: <ptr>, ACCE virt addr: <ptr>, phys addr: 0x210f00000
+AppleARMBacklight::start: no DBV offset data
+AppleARMBacklight::start: no DBV max data
 [ERROR] IOPort::_setSupportedTransportsForRegistryEntry(): Error setting supported transports for Port-Inductive@101!
+AppleCredentialManager: init: called, instance = <ptr>.
+AppleT803xIO::start: this: <ptr>, ACCP virt addr: <ptr>, phys addr: 0x211f00000
+AppleARMBacklight::start: _calibratedMaxCurrent=15000
+AppleARMBacklight::start: _calibratedMidCurrent=3750
+[ERROR] IOPort::_setSupportedFeaturesForRegistryEntry(): Could not find features-supported property! (entry: dock-0pin)
+ACMFirstResponderKernelService: init: called, .
 ACMRM-S: init: called, starting PersistentStore service.
-ACMRM-C: init: called, starting AccessoryCache service.
-ACMKernelService: initValueFromBootArgAliasesUInt32: acc-cache size = 16 (default).
-AppleS5L8940XI2CController::start: smc-i2c1 this: <ptr> _i2cBaseAddress: <ptr>
-ACMKernelService: initValueFromBootArgAliasesUInt32: acc-cache expiration = 2592000 (default).
 AppleARMBacklight::start: mA2Nits2ndOrderCoef=-1
 AppleARMBacklight::start: mA2Nits1stOrderCoef=63
-[ERROR] IOPort::_setSupportedFeaturesForRegistryEntry(): Could not find features-supported property! (entry: dock-0pin)
-ACMRM: init: called, starting TRM service.
-ACMRM-A: init: called, starting TRM Analytics service.
+[ERROR] IOPort::_setSupportedFeaturesForRegistryEntry(): Error setting supported features for Port-Inductive@101!
+ACMRM-C: init: called, starting AccessoryCache service.
+ACMKernelService: initValueFromBootArgAliasesUInt32: acc-cache size = 16 (default).
+AppleInterruptController::start: _aicVersion = 2 _aicBaseAddress = 0x<ptr> _aicNumExtInts = 0x00000240 _aicNumIPIs = 0x00000002
 AppleARMBacklight::start: mA2Nits0thOrderCoef=-3
 AppleARMBacklight::start: nits2mAmps2ndOrderCoef=1357
-[ERROR] IOPort::_setSupportedFeaturesForRegistryEntry(): Error setting supported features for Port-Inductive@101!
-AppleS5L8940XI2CController::start: smc-i2c0 this: <ptr> _i2cBaseAddress: <ptr>
-ACMKernelService: initValueFromBootArgAliasesUInt32: analytics collection period = 86400 (default).
+IOPort::start(): Registering service... (portType: 14, portNumber: 101, providerPath: IOService:/AppleARMPE/dock-0pin)
+ACMKernelService: initValueFromBootArgAliasesUInt32: acc-cache expiration = 2592000 (default).
+AppleInterruptController::start: Num Shared Timestamps == 0
 AppleARMBacklight::start: nits2mAmps1stOrderCoef=15551
 AppleARMBacklight::start: nits2mAmps0thOrderCoef=45
-IOPort::start(): Registering service... (portType: 14, portNumber: 101, providerPath: IOService:/AppleARMPE/dock-0pin)
-ACMKernelService: initValueFromBootArgAliasesUInt32: policy mode timeout = 259200 (default).
+ACMRM: init: called, starting TRM service.
+ACMRM-A: init: called, starting TRM Analytics service.
+Port-Inductive handleAccessoryDetect, detect change = 0 (override 100), ID change = 0 (override 0), result 0 
 AppleARMBacklight::start: _lMaxProduct=42598400
 AppleARMBacklight::start: _lMidProduct=10158080
-Port-Inductive handleAccessoryDetect, detect change = 0 (override 100), ID change = 0 (override 0), result 0 
-000002.283570 AppleT8030TypeCPhy@0: AppleT8027TypeCPhy::start: usb3-phy-parent not specified
-ACMRM-A: notifyStandardModeTimeoutChanged: called, value = 259200 (modified = YES).
+ACMKernelService: initValueFromBootArgAliasesUInt32: analytics collection period = 86400 (default).
+AppleGPIOICController::start: this: <ptr>, _gpioicBaseAddress: <ptr>
 AppleARMBacklight::start: _lMinProduct=183500
 AppleARMBacklight::start: Backlight calibration data 0
-ACMKernelService: initValueFromBootArgAliasesUInt32: (bounded) grace period timeout = 3600 (default).
+ACMKernelService: initValueFromBootArgAliasesUInt32: policy mode timeout = 259200 (default).
+AppleGPIOICController::start: this: <ptr>, _gpioicBaseAddress: <ptr>
 AppleARMBacklight::start: No valid backlight cal data in syscfg.. Use defaults
-AppleEmbeddedPCIE::start this = <ptr>, gAPCIEdebugFlags = 0x80000001
-AppleS5L8940XI2CController::start: i2c3 this: <ptr> _i2cBaseAddress: <ptr>
-AppleS5L8940XI2CController::start: i2c1 this: <ptr> _i2cBaseAddress: <ptr>
-ACMRM-A: notifyGracePeriodTimeoutChanged: called, value = 3600 (modified = YES).
+ACMRM-A: notifyStandardModeTimeoutChanged: called, value = 259200 (modified = YES).
 AppleARMBacklight::start: _calibratedMinCurrent=74 uA
 AppleARMBacklight::start: _lMaxProduct=42598400, _lMidProduct=10158080, _lMinProduct=183500, _lMaxPanel=42598399, _lMidPanel=11169963, _lMinPanel=99640, _milliAmps2NitsScaleFactor=732648
-AppleS5L8940XI2CController::start: i2c0 this: <ptr> _i2cBaseAddress: <ptr>
-virtual bool AppleARMLightEmUp::start(IOService *): starting...
-AppleT8015TempSensor::start: missing device tree value (sensor-offset-CTL2)
-AppleT8015TempSensor::start: missing device tree value (sensor-offset-CTL2)
-AppleS5L8940XI2CController::start: i2c2 this: <ptr> _i2cBaseAddress: <ptr>
-ACMKernelService: initValueFromBootArgAliasesUInt32: enabled = 1 (default).
-ACMRM: _disableBy: [TRM ENABLED=YES] (mask=0, DISABLED BY: Def=NO* BtArg=NO LegHW=NO OSEnv=NO | MngCo=NO DwnOS=NO ChkBd=NO coGSw=NO).
-AppleT8015TempSensor::start: missing device tree value (sensor-offset-CTL1)
-ACMRM: _disableBy: [TRM ENABLED=YES] (mask=0, DISABLED BY: Def=NO BtArg=NO* LegHW=NO OSEnv=NO | MngCo=NO DwnOS=NO ChkBd=NO coGSw=NO).
-ACMRM: _loadDisabledByOSEnvironment: disabled by OSEnvironment: NO.
-AppleARMBacklight::start: dim-ramp-max-step=100
-AppleT8015TempSensor::start: missing device tree value (sensor-offset-CTL1)
-AppleT8015TempSensor::start: Got temperatureOffsetValue of 13 for locationID 0x54703169
-ACMRM: _disableBy: [TRM ENABLED=YES] (mask=0, DISABLED BY: Def=NO BtArg=NO LegHW=NO OSEnv=NO* | MngCo=NO DwnOS=NO ChkBd=NO coGSw=NO).
-IOAccessoryTRM::start(): inRestoreMode: YES, dockSupportsTRM: NO (m_mgrPrimaryPortID: 512)
-AppleARMBacklight::start: _minDACLevel=143 _maxDACLevel=1879
-ACMRM: _mapAndPublishTRM: set TRM_PolicyTimeout = 259200.
-ACMRM: _mapAndPublishTRM: sending kIOMessageServicePropertyChange(n=1) while DISABLED, TRM: 259200 -/ff 4294967295 -/ff miss=ff (CUR: 259200 -/ff 4294967295 -/ff).
-AppleT8015TempSensor::start: missing device tree value (sensor-offset-CTL2)
-IOAccessoryTRM::start(): Registering service IOAccessoryTRM... (m_mgrPrimaryPortID: 512)
-AppleT8015TempSensor::start: missing device tree value (sensor-offset-CTL2)
+ACMKernelService: initValueFromBootArgAliasesUInt32: (bounded) grace period timeout = 3600 (default).
 AppleS8000AES::start: registers at phys:0x0x235008000/0x0x23d2d0000 virt:0x<ptr>/0x0x4000 / 0x<ptr>/0x0x4000
-AppleGPIOICController::start: this: <ptr>, _gpioicBaseAddress: <ptr>
-AppleSynopsysMIPIDSIController::start: this: <ptr>, _dsimBaseAddress = <ptr> physical = 0x230400000 length 786432
-AppleCredentialManager: init: returning, result = true, instance = <ptr>.
-AppleT8015TempSensor::start: missing device tree value (sensor-offset-CTL1)
-AppleT8015TempSensor::start: missing device tree value (sensor-offset-CTL1)
+AppleARMBacklight::start: dim-ramp-max-step=100
+AppleARMBacklight::start: _minDACLevel=143 _maxDACLevel=1879
+ACMRM-A: notifyGracePeriodTimeoutChanged: called, value = 3600 (modified = YES).
 AppleS8000AES::start: aes-version: 3
 AppleS8000AES::start: using-acg: no
-AppleT8015TempSensor::start: Got temperatureOffsetValue of 4 for locationID 0x54613069
-AppleSamsungSPIController::start: spi3: _spiBaseAddress = 0x23510c000:<ptr>, _spiVersion = 1 _spiInternalCS = 0
+ACMKernelService: initValueFromBootArgAliasesUInt32: enabled = 1 (default).
+ACMRM: _disableBy: [TRM ENABLED=YES] (mask=0, DISABLED BY: Def=NO* BtArg=NO LegHW=NO OSEnv=NO | MngCo=NO DwnOS=NO ChkBd=NO coGSw=NO).
+ACMRM: _disableBy: [TRM ENABLED=YES] (mask=0, DISABLED BY: Def=NO BtArg=NO* LegHW=NO OSEnv=NO | MngCo=NO DwnOS=NO ChkBd=NO coGSw=NO).
+ACMRM: _loadDisabledByOSEnvironment: disabled by OSEnvironment: NO.
+IOAccessoryTRM::start(): inRestoreMode: YES, dockSupportsTRM: NO (m_mgrPrimaryPortID: 512)
+AppleDieTempController::start: 
+AppleDieTempController::initLoopConfig: Loop 0 kp: 0xc0000
+ACMRM: _disableBy: [TRM ENABLED=YES] (mask=0, DISABLED BY: Def=NO BtArg=NO LegHW=NO OSEnv=NO* | MngCo=NO DwnOS=NO ChkBd=NO coGSw=NO).
+AppleS5L8940XI2CController::start: smc-i2c1 this: <ptr> _i2cBaseAddress: <ptr>
 AppleGPIOICController::start: this: <ptr>, _gpioicBaseAddress: <ptr>
+AppleDieTempController::initLoopConfig: Loop 0 ki: 0x70e8000
+AppleDieTempController::initLoopConfig: Loop 0 control type: 2
 AppleGPIOICController::start: this: <ptr>, _gpioicBaseAddress: <ptr>
-AppleInterruptController::start: _aicVersion = 2 _aicBaseAddress = 0x<ptr> _aicNumExtInts = 0x00000240 _aicNumIPIs = 0x00000002
+ACMRM: _mapAndPublishTRM: set TRM_PolicyTimeout = 259200.
+IOAccessoryTRM::start(): Registering service IOAccessoryTRM... (m_mgrPrimaryPortID: 512)
+AppleT8015TempSensor::start: missing device tree value (sensor-offset-CTL2)
+AppleT8015TempSensor::start: missing device tree value (sensor-offset-CTL2)
+ACMRM: _mapAndPublishTRM: sending kIOMessageServicePropertyChange(n=1) while DISABLED, TAppleS5L8960XWatchDogTimer::start: _wdtBaseAddress: <ptr> _wdtResetCount=0xe4e1c00 _useSMCEnforcedWatchdog=0
+RM: 259200 -/ff 4294967295 -/ff miss=ff (CUR: 259200 -/ff 4294967295 -/ff).
+AppleDieTempController::initLoopConfig: Loop 1 kp: 0xc0000
+AppleT8015TempSensor::start: missing device tree value (sensor-offset-CTL1)
+AppleT8015TempSensor::start: missing device tree value (sensor-offset-CTL1)
+AppleCredentialManager: init: returning, result = true, instance = <ptr>.
+watchdog disabled by boot-argAppleT8015TempSensor::start: missing device tree value (sensor-offset-CTL2)
+AppleDialogSPMIPMU::start: spmi-pmu _pmuNub: <ptr> built 22:52:54 Aug 12 2020
+AppleDieTempController::initLoopConfig: Loop 1 ki: 0x70e8000
+AppleDieTempController::initLoopConfig: Loop 1 control type: 4
+AppleA7IOPNub: withRegistryEntry, 47: allocated nub <ptr>
+
+AppleT8015TempSensor::start: missing device tree value (sensor-offset-CTL2)
+AppleT8015TempSensor::start: Got temperatureOffsetValue of 13 for locationID 0x54703169
+AppleEmbeddedPCIE::start this = <ptr>, gAPCIEdebugFlags = 0x80000001
 AppleARMBootPerf: Error: profile region not found (2)
 AppleARMBootPerf: Error: failed to publish profile data (2)
-M3 Normal mode not enabled on Fastsim
-AppleGPIOICController::start: this: <ptr>, _gpioicBaseAddress: <ptr>
-AppleDieTempController::start: 
-AppleSamsungSPIController::start: spi1: _spiBaseAddress = 0x235104000:<ptr>, _spiVersion = 1 _spiInternalCS = 0
-AppleT8015TempSensor::start: missing device tree value (sensor-offset-CTL2)
-AppleInterruptController::start: Num Shared Timestamps == 0
-virtual bool CoreAnalyticsHub::start(IOService *)::105:CoreAnalyticsHub start
-virtual bool IOMobileFramebufferLegacy::start(IOService *)
-AppleDieTempController::initLoopConfig: Loop 0 kp: 0xc0000
-AppleDieTempController::initLoopConfig: Loop 0 ki: 0x70e8000
 AppleT8015TempSensor::start: missing device tree value (sensor-offset-CTL1)
-IOMFB: driver commit: 
-AppleDieTempController::initLoopConfig: Loop 0 control type: 2
-AppleDieTempController::initLoopConfig: Loop 1 kp: 0xc0000
-AppleSSE::start called
-AppleSSE::start returning, result = 1
-AUC:[0xffffffe19b933af0]::start(0xffffffe19b6f1a40)
-AppleDieTempController::initLoopConfig: Loop 1 ki: 0x70e8000
-
-virtual bool AppleSynopsysMIPIDSIController::start(IOService *) panicOnError NOT Supported
-AppleDieTempController::initLoopConfig: Loop 1 control type: 4
+AppleSynopsysMIPIDSIController::start: this: <ptr>, _dsimBaseAddress = <ptr> physical = 0x230400000 length 786432
 AppleDieTempController::initLoopConfig: Loop 2 kp: 0x2f9999
-AppleSEPKeyStore:321:0: starting (BUILT: Aug 12 2020 22:51:30)
-AppleSynopsysMIPIDSIController::start Failed to get phy settings count
 AppleDieTempController::initLoopConfig: Loop 2 ki: 0x1180000
+AppleT8015TempSensor::start: missing device tree value (sensor-offset-CTL1)
+AppleA7IOPNub: withRegistryEntry, 47: allocated nub <ptr>
+
+virtual bool CoreAnalyticsHub::start(IOService *)::105:CoreAnalyticsHub start
+AppleT8015TempSensor::start: Got temperatureOffsetValue of 4 for locationID 0x54613069
 AppleDieTempController::initLoopConfig: Loop 2 control type: 16
+AppleDieTempController::initLoopConfig: Successfully configured 3 loops
+AppleSSE::start called
+LPM state clear
+AppleDieTempController::handleBootArgs: In handleBootArgs routine
+M3 Normal mode not enabled on Fastsim
+AppleSSE::start returning, result = 1
+AUC:[0xffffffe19bb973c0]::start(0xffffffe19b956080)
+
+virtual bool IOMobileFramebufferLegacy::start(IOService *)
+IOMFB: driver commit: 
+AppleDieTempController::cpuPerfControllerArrivalHandler: boot_dvd_factor 0x00010000
+virtual bool AppleSynopsysMIPIDSIController::start(IOService *) panicOnError NOT Supported
+Identified Serial Port uart7 at 0x23521c000(<ptr>)
+AppleSynopsysMIPIDSIController::start Failed to get phy settings count
+AppleSEPKeyStore:321:0: starting (BUILT: Aug 12 2020 22:51:30)
+RTBuddy(ANS2): start(<ptr>) - (Aug 12 2020@22:50:37)
+AppleSamsungSPIController::start: spi3: _spiBaseAddress = 0x23510c000:<ptr>, _spiVersion = 1 _spiInternalCS = 0
+000003.684470 AppleT8030TypeCPhy@0: AppleT8027TypeCPhy::start: usb3-phy-parent not specified
+pci (build 22:19:24 Aug 12 2020), flags 0x20c3008
+pci (build 22:19:24 Aug 12 2020), flags 0x20c3008
+AppleSamsungSPIController::start: spi1: _spiBaseAddress = 0x235104000:<ptr>, _spiVersion = 1 _spiInternalCS = 0
+virtual bool AppleSynopsysMIPIDSIController::start(IOService *)  Slow Adaptive Clocking enabled with 9 frequencies
 AppleSEPKeyStore:545:0: _sep_enabled = 1
 AppleCredentialManager: start: called, instance = <ptr>.
-AppleS5L8960XWatchDogTimer::start: _wdtBaseAddress: <ptr> _wdtResetCount=0xe4e1c00 _useSMCEnforcedWatchdog=0
-Identified Serial Port uart7 at 0x23521c000(<ptr>)
-Identified Serial Port uart0 at 0x235200000(<ptr>)
-AppleDieTempController::initLoopConfig: Successfully configured 3 loops
-AppleDieTempController::handleBootArgs: In handleBootArgs routine
-ACMRM: _publishIOResource: AppleUSBRestrictedModeTimeout = 259200.
-AppleDialogSPMIPMU::start: spmi-pmu _pmuNub: <ptr> built 22:52:54 Aug 12 2020
-watchdog disabled by boot-argAppleDieTempController::cpuPerfControllerArrivalHandler: boot_dvd_factor 0x00010000
-AppleA7IOPNub: withRegistryEntry, 47: allocated nub <ptr>
-
-AppleA7IOPNub: withRegistryEntry, 47: allocated nub <ptr>
-
-AppleA7IOPNub: withRegistryEntry, 47: allocated nub <ptr>
-
-LPM state clear
-virtual bool AppleSynopsysMIPIDSIController::start(IOService *)  Slow Adaptive Clocking enabled with 9 frequencies
-pci (build 22:19:24 Aug 12 2020), flags 0x20c3008
-pci (build 22:19:24 Aug 12 2020), flags 0x20c3008
-AppleDisplayPMU::start: display-pmu _pmuIICNub: <ptr> built 22:19:31 Aug 12 2020
-[ PCI configuration begin ]
-[ PCI configuration end, bridges 3, devices 0 ]
-virtual bool AppleSEPManager::start(IOService *): 
-AppleA7IOPNub: withRegistryEntry, 47: allocated nub <ptr>
-
-virtual bool AppleSEPManager::start(IOService *): SEP memory IS coherent
-AppleCredentialManager: start: initializing power management, instance = <ptr>.
-AppleCredentialManager: start: started, instance = <ptr>.
-RTBuddy(SMC): start(<ptr>) - (Aug 12 2020@22:50:37)
-RTBuddy(SMC): Boot args override: wdt = -1
-virtual bool AppleSEPManager::start(IOService *): control endpoints created
-RTBuddy(ANS2): start(<ptr>) - (Aug 12 2020@22:50:37)
-RTBuddy(ANS2): Boot args override: wdt = -1
-AppleAuthCPRelay:_sendCommandGated CMD=0x1 _receivedStatus ERROR ( status = 0xe00002e9 )
-apcie[2:pci-bridge2]::_mapRIDToSID no mapper defined and device <ptr> (0:2:0) does not support hot-plug
-apcie[3:pci-bridge3]::_mapRIDToSID no mapper defined and device <ptr> (0:3:0) does not support hot-plug
-RTBuddy(SIO): start(<ptr>) - (Aug 12 2020@22:50:37)
-RTBuddy(SIO): Boot args override: wdt = -1
-AppleS8000AES::start: using DART Mapper: <ptr>
-AppleCredentialManager: start: returning, result = true, instance = <ptr>.
-AppleAuthCPRelay:_getCert failed to send command kAuthCommandIDGetCert
-AppleAuthCPRelay:start _getCert() failed (status = 0xe00002e9)
-RTBuddy(SIO): Resuming...
-
-AppleSmartIO (RTBuddy-based)::start (<ptr>) - (Aug 12 2020@22:19:30)
-AppleICA60:probe vendorID 0x0 prodID 0x1 fabID 0xa0 revision 0x0 sensor 0x1 mic-bias-index 1
-RTBuddy(SMC): Resuming...
-
-Starting AppleSMC kext(<ptr>) - (Aug 12 2020@22:51:44)
-AppleSMCEmbedded::setPowerState(): ENTER powerStateOrdinal=1, _activeKeyCommand=0 newState=1
-virtual bool AppleSEPManager::start(IOService *): PM init done
-IOReturn AppleSEPManager::_setPowerState(unsigned long *): power state 0 -> 2
-void AppleSEPBooter::_bootAction(void *, void *): SEP status: 1
-void AppleSEPBooter::_bootAction(void *, void *): SEPROM response data, op 103 data 0x000000a0
-AppleSEP:WARNING: SEP: unexpected message, op 117 tag 0 param 0 data 0x00000000
-RTBuddy(ANS2): Resuming...
-
-virtual bool AppleSEPManager::start(IOService *): registered
-virtual IOService *AppleANS2NVMeController::probe(IOService *, SInt32 *)::194:Found (ANS2) provider, returning score 100000
-AppleA7IOPNub: withRegistryEntry, 47: allocated nub <ptr>
-
-virtual IOService *AppleANS2NVMeController::probe(IOService *, SInt32 *)::194:Found (ANS2) provider, returning score 100000
 RTBuddy(AOP): start(<ptr>) - (Aug 12 2020@22:50:37)
+ACMRM: _publishIOResource: AppleUSBRestrictedModeTimeout = 259200.
+AppleS5L8940XI2CController::start: i2c2 this: <ptr> _i2cBaseAddress: <ptr>
+AppleS5L8940XI2CController::start: smc-i2c0 this: <ptr> _i2cBaseAddress: <ptr>
 RTBuddy(AOP): Boot args override: wdt = -1
-AppleCredentialManager: handleEventGated: called, event(5).
-AppleCredentialManager: handleEventGated: AppleSEPManager has been matched.
-void AppleEmbeddedNVMeController::GetRestoreEnvironment()::444:Restore Environment!
-void AppleEmbeddedNVMeController::GetRestoreEnvironment()::444:Restore Environment!
+[ PCI configuration begin ]
+AppleS5L8940XI2CController::start: i2c1 this: <ptr> _i2cBaseAddress: <ptr>
+AppleDisplayPMU::start: display-pmu _pmuIICNub: <ptr> built 22:19:31 Aug 12 2020
+AppleS5L8940XI2CController::start: i2c3 this: <ptr> _i2cBaseAddress: <ptr>
+AppleA7IOPNub: withRegistryEntry, 47: allocated nub <ptr>
+RTBuddy(ANS2): Boot args override: wdt = -1
 RTBuddy(AOP): Resuming...
 
 AppleSPUFirmwareService: found node AOP
-virtual bool AppleANS2NVMeController::start(IOService *)::394:Found the ANS2Endpoint1
-virtual bool AppleANS2NVMeController::start(IOService *)::394:Found the ANS2Endpoint1
-void AppleEmbeddedNVMeController::GetRestoreEnvironment()::444:Restore Environment!
-void AppleEmbeddedNVMeController::GetRestoreEnvironment()::444:Restore Environment!
-bool AppleEmbeddedNVMeController::SetNamespacesStruct()::186:Obtained 7 namespaces from DT
-Failed to enable notifications (0x84)!
+AppleCredentialManager: start: initializing power management, instance = <ptr>.
+Identified Serial Port uart0 at 0x235200000(<ptr>)
+AppleS5L8940XI2CController::start: i2c0 this: <ptr> _i2cBaseAddress: <ptr>
+AppleT8015TempSensor::start: missing device tree value (sensor-offset-CTL2)
+AppleA7IOPNub: withRegistryEntry, 47: allocated nub <ptr>
 
-ERROR: Unable to enable notification interface (kSMCKeyNotFound)bool AppleEmbeddedNVMeController::SetNamespacesStruct()::186:Obtained 7 namespaces from DT
-.
+RTBuddy(SIO): start(<ptr>) - (Aug 12 2020@22:50:37)
+virtual bool AppleARMLightEmUp::start(IOService *): starting...
 
-virtual IOFilterInterruptEventSource *AppleANS2NVMeController::CreateDeviceInterrupt(IOInterruptEventSource::Action, IOFilterInterruptEventSource::Filter, IOService *)::2719:ANS2 NVMe interrupt index - 0x4
+RTBuddy(SIO): Boot args override: wdt = -1
+RTBuddy(SIO): Resuming...
+AppleCredentialManager: start: started, instance = <ptr>.
+AppleT8015TempSensor::start: missing device tree value (sensor-offset-CTL1)
+AppleS8000AES::start: using DART Mapper: <ptr>
+
+AppleSmartIO (RTBuddy-based)::start (<ptr>) - (Aug 12 2020@22:19:30)
+AppleCredentialManager: start: returning, result = true, instance = <ptr>.
+RTBuddy(ANS2): Resuming...
+
+AppleICA60:probe vendorID 0x0 prodID 0x1 fabID 0xa0 revision 0x0 sensor 0x1 mic-bias-index 1
+virtual IOService *AppleANS2NVMeController::probe(IOService *, SInt32 *)::194:Found (ANS2) provider, returning score 100000
+AppleA7IOPNub: withRegistryEntry, 47: allocated nub <ptr>
+
+virtual IOService *AppleANS2NVMeController::probe(IOService *, SInt32 *)::194:Found (ANS2) provider, returning score 100000
 LPM: Log data is NOT valid. 0x0 0x0
+void AppleEmbeddedNVMeController::GetRestoreEnvironment()::444:Restore Environment!
+virtual bool AppleSEPManager::start(IOService *): 
 AppleDialogSPMIPMU::start: Primary PMU detected
-virtual IOFilterInterruptEventSource *AppleANS2NVMeController::CreateDeviceInterrupt(IOInterruptEventSource::Action, IOFilterInterruptEventSource::Filter, IOService *)::2719:ANS2 NVMe interrupt index - 0x4
+[ PCI configuration end, bridges 3, devices 0 ]
+void AppleEmbeddedNVMeController::GetRestoreEnvironment()::444:Restore Environment!
+RTBuddy(SMC): start(<ptr>) - (Aug 12 2020@22:50:37)
+virtual bool AppleSEPManager::start(IOService *): SEP memory IS coherent
+virtual bool AppleANS2NVMeController::start(IOService *)::394:Found the ANS2Endpoint1
 AppleARMRTC started!#####
 AppleDialogSPMIPMURTC started!******
+RTBuddy(SMC): Boot args override: wdt = -1
+RTBuddy(SMC): Resuming...
+
+virtual bool AppleSEPManager::start(IOService *): control endpoints created
+Starting AppleSMC kext(<ptr>) - (Aug 12 2020@22:51:44)
+apcie[2:pci-bridge2]::_mapRIDToSID no mapper defined and device <ptr> (0:2:0) does not support hot-plug
+apcie[3:pci-bridge3]::_mapRIDToSID no mapper defined and device <ptr> (0:3:0) does not support hot-plug
+virtual bool AppleANS2NVMeController::start(IOService *)::394:Found the ANS2Endpoint1
 Failed to read info-leg_scrpadAppleDialogSPMIPMURTC::handleStart: ro=0 nvram=0 helper=0 AppleDialogSPMIPMU _pmuNub: <ptr> 0x1102:0x9f04-0x9f15 built 22:52:53 Aug 12 2020
-AppleDialogSPMIPMURTC tick read!&&&&&&&
+virtual bool AppleSEPManager::start(IOService *): PM init done
+IOReturn AppleSEPManager::_setPowerState(unsigned long *): power state 0 -> 2
+AppleSMCEmbedded::setPowerState(): ENTER powerStateOrdinal=1, _activeKeyCommand=0 newState=1
+void AppleSEPBooter::_bootAction(void *, void *): SEP status: 1
+void AppleSEPBooter::_bootAction(void *, void *): SEPROM response data, op 103 data 0x000000a0
+AppleSEP:WARNING: SEP: unexpected message, op 117 tag 0 param 0 data 0x00000000
+void AppleEmbeddedNVMeController::GetRestoreEnvironment()::444:Restore Environment!
+virtual bool AppleSEPManager::start(IOService *): registered
+AppleCredentialManager: handleEventGated: called, event(5).
+AppleCredentialManager: handleEventGated: AppleSEPManager has been matched.
+void AppleEmbeddedNVMeController::GetRestoreEnvironment()::444:Restore Environment!
+AppleAuthCPRelay:_sendCommandGated CMD=0x1 _receivedStatus ERROR ( status = 0xe00002e9 )
+bool AppleEmbeddedNVMeController::SetNamespacesStruct()::186:Obtained 7 namespaces from DT
+AppleAuthCPRelay:_getCert failed to send command kAuthCommandIDGetCert
+AppleAuthCPRelay:start _getCert() failed (status = 0xe00002e9)
+AppleDialogSPMIPMURTC ticbool AppleEmbeddedNVMeController::SetNamespacesStruct()::186:Obtained 7 namespaces from DT
+k read!&&&&&&&
 AppleDialogSPMIPMURTC ending!%%%
 AppleARMRTC registering service!@@@@@@
+virtual IOFilterInterruptEventSource *AppleANS2NVMeController::CreateDeviceInterrupt(IOInterruptEventSource::Action, IOFilterInterruptEventSource::Filter, IOService *)::2719:ANS2 NVMe interrupt index - 0x4
 AppleARMRTC service registered!$$$$$
+virtual IOFilterInterruptEventSource *AppleANS2NVMeController::CreateDeviceInterrupt(IOInterruptEventSource::Action, IOFilterInterruptEventSource::Filter, IOService *)::2719:ANS2 NVMe interrupt index - 0x4
 AppleARMRTC publishing service!^^^^^^
+Failed to enable notifications (0x84)!
+
+ERROR: Unable to enable notification interface (kSMCKeyNotFound).
+
 apfs_module_start:2411: load: com.apple.filesystems.apfs, v1677.0.5, apfs-1677.0.5, 2020/08/12
 com.apple.AppleFSCompressionTypeZlib kmod start
+Identified Serial Port uart4 at 0x235210000(<ptr>)
 IOSurfaceRoot::installMemoryRegions()
 IOSurface disallowing global lookups
 apfs_sysctl_register:1253: done registering sysctls.
+AppleAuthCPRelay::copyProperty: obj == NULL key = AuthPassed
 com.apple.AppleFSCompressionTypeZlib load succeeded
 bool IOMFB::UPPipe_H11P::setup_tunables_base_target(): Tunables Target 9
 IOMFB setup_table: Could not find table 'display-temp-compensation' in registry. Using default table.
@@ -260,8 +262,8 @@ function-brightness_update not found
 function-mcc_dataset not found 
 IOMFB arm_fn_search: Couldn't allocate AppleARMFunction for function-temperature_update
 IOMFB arm_fn_search: Couldn't allocate AppleARMFunction for function-link_enable
-IOMFB arm_fn_search: failed with 0xe00002bc (function-link_enable)
 IOMFB arm_fn_search: failed with 0xe00002bc (function-temperature_update)
+IOMFB arm_fn_search: failed with 0xe00002bc (function-link_enable)
 L2TP domain init
 L2TP domain init complete
 Load request for com.apple.nke.pptp failed: -603946998
@@ -270,20 +272,18 @@ apfs_vfsop_mountroot:2188: apfs: mountroot called!
 apfs_vfsop_mount:1745: unable to root from devvp <ptr> (root_device): 2
 apfs_vfsop_mountroot:2192: apfs: mountroot failed, error: 2
 hfs: mounted AzulSeed18A5351d.arm64eCustomerRamDisk on device b(3, 0)
-000005.497217 AppleT8027USBXDCI@: AppleUSBXDCIARM::start: _dock is NULL, defaulting to device mode
 virtual IOReturn IONVMeController::CreateSubmissionQueue(uint16_t, uint8_t)::2886:SQ index=0 entrysize=64
-000005.545578 AppleT8027USBXDCI@: IOUSBDeviceController::prepareDefaults: model iPhone version 12.1
-000005.564258 usb-drd-port-hs@00100000: AppleUSB30XHCITypeCPort::start: _dock is NULL, defaulting to device mode
-000005.578638 usb-drd-port-hs@00100000: AppleUSBHostPort::initBusCurrent: insufficient power to enable this port
+000006.197126 AppleT8027USBXDCI@: AppleUSBXDCIARM::start: _dock is NULL, defaulting to device mode
+000006.218913 usb-drd-port-hs@00100000: AppleUSB30XHCITypeCPort::start: _dock is NULL, defaulting to device mode
+000006.235842 usb-drd-port-hs@00100000: AppleUSBHostPort::initBusCurrent: insufficient power to enable this port
 virtual IOReturn IONVMeController::CreateSubmissionQueue(uint16_t, uint8_t)::2886:SQ index=0 entrysize=64
+000006.283144 AppleT8027USBXDCI@: IOUSBDeviceController::prepareDefaults: model iPhone version 12.1
 virtual IOReturn IONVMeController::CreateSubmissionQueue(uint16_t, uint8_t)::2886:SQ index=1 entrysize=128
-000005.646385 usb-drd-port-hs@00100000: AppleUSB30XHCITypeCPort::cableChangeOccurred: cable detect disabled: transport type 2 connect type 2 restricted mode 0
-000005.665695 usb-drd-port-hs@00100000: AppleUSB30XHCITypeCPort::cableChangeOccurred: no action for transport type 2 connect type 2 restricted mode 0
 virtual IOReturn IONVMeController::CreateSubmissionQueue(uint16_t, uint8_t)::2886:SQ index=1 entrysize=128
+000006.324699 usb-drd-port-hs@00100000: AppleUSB30XHCITypeCPort::cableChangeOccurred: cable detect disabled: transport type 2 connect type 2 restricted mode 0
+000006.345378 usb-drd-port-hs@00100000: AppleUSB30XHCITypeCPort::cableChangeOccurred: no action for transport type 2 connect type 2 restricted mode 0
 virtual void AppleANS2NVMeController::SetModeselRegister(uint32_t)::1186:Setting modesel to 4
-Identified Serial Port uart4 at 0x235210000(<ptr>)
 virtual void AppleANS2NVMeController::SetModeselRegister(uint32_t)::1186:Setting modesel to 4
-AppleAuthCPRelay::copyProperty: obj == NULL key = AuthPassed
 bool AppleEmbeddedNVMeController::IdentifyNamespaces()::1964:nvme: Vendor ID     : 0x1b36
 bool AppleEmbeddedNVMeController::IdentifyNamespaces()::1964:nvme: Vendor ID     : 0x1b36
 bool AppleEmbeddedNVMeController::IdentifyNamespaces()::1965:nvme: Model Number  : QEMU NVMe Ctrl                          
@@ -337,352 +337,352 @@ bool AppleEmbeddedNVMeController::DetermineNamespaces()::2435:Identified nsid[16
 bool AppleEmbeddedNVMeController::DetermineNamespaces()::2435:Identified nsid[16] as nstype[0]
 bool AppleEmbeddedNVMeController::SetSwapWriteLimit(uint32_t)::2192: Swap limit set to 1073741824bytes, 1GB
 bool AppleEmbeddedNVMeController::SetSwapWriteLimit(uint32_t)::2192: Swap limit set to 1073741824bytes, 1GB
+virtual bool AppleEmbeddedNVMeController::InitializeController()::507:FW update not complete, create dummy block device
+virtual bool AppleEmbeddedNVMeController::InitializeController()::507:FW update not complete, create dummy block device
+uint32_t AppleEmbeddedNVMeNVRAM::GetNVRAMSize()::745:NVRAM size is 8192 bytes
 /Library/Caches/com.apple.xbs/Sources/AppleSMC/AppleSMC-589.0.5/AppleSMCEmbeddedCharger/AppleSMCCharger.cpp:408 _setPowerStateGated() ENTER powerStateOrdinal=1, _powerState=1
+uint32_t AppleEmbeddedNVMeNVRAM::GetNVRAMSize()::745:NVRAM size is 8192 bytes
 AppleSMCSensorDispatcher::start: Found 8 sensors from the device tree
+virtual bool AppleEmbeddedNVMeController::AllocateNodes(bool)::1578:allocateAll 1
+virtual bool AppleEmbeddedNVMeController::AllocateNodes(bool)::1578:allocateAll 1
 AppleSMCSensorDispatcher::start: Start success
 
-virtual bool AppleEmbeddedNVMeController::InitializeController()::507:FW update not complete, create dummy block device
-virtual bool AppleEmbeddedNVMeController::InitializeController()::507:FW update not complete, create dummy block device
-uint32_t AppleEmbeddedNVMeNVRAM::GetNVRAMSize()::745:NVRAM size is 8192 bytes
-uint32_t AppleEmbeddedNVMeNVRAM::GetNVRAMSize()::745:NVRAM size is 8192 bytes
-virtual bool AppleEmbeddedNVMeController::AllocateNodes(bool)::1578:allocateAll 1
-virtual bool AppleEmbeddedNVMeController::AllocateNodes(bool)::1578:allocateAll 1
 AppleARMBacklight::start: Pre-strobe iDAC=1879 overriden in EDT 
 IOMFB setup_table: Could not find table 'display-backlight-compensation' in registry. Using default table.
-virtual bool AppleEmbeddedNVMeController::StartController()::1547:Setting NAND status to Ready
 AppleARMBacklight::armFunctionCallback: Using 1 Backlight Controllers
-virtual bool AppleEmbeddedNVMeController::StartController()::1547:Setting NAND status to Ready
-AppleARMBacklight::armFunctionCallback: Dual backlight controller system
 IOMFB: function-pcc_update found
+AppleARMBacklight::armFunctionCallback: Dual backlight controller system
+virtual bool AppleEmbeddedNVMeController::StartController()::1547:Setting NAND status to Ready
+virtual bool AppleEmbeddedNVMeController::StartController()::1547:Setting NAND status to Ready
 ApplePinotLCD: _lcdPanelID: 0xa1c432d1 _lcdPanelClass: 2
 dyld: setting comm page to 0x0
-Wed Nov 11 20:08:57 2026 localhost com.apple.xpc.launchd[1] <Notice>: hello
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: hello
 Darwin Bootstrapper Version 7.0.0: Mon Aug 10 04:09:14 PDT 2020; root:libxpc_executables-2038.0.13~13/launchd/RELEASE_ARM64E
 boot-args = -restore rd=md0 nand-enable-reformat=1 debug=0x14e serial=3 wdt=-1
-Wed Nov 11 20:08:57 2026 localhost com.apple.xpc.launchd[1] <Notice>: Restore environment starting.
-Wed Nov 11 20:08:57 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: entering ondemand mode
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: fsck
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: mount-phase-1
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: data-protection
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: finish-obliteration
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Notice>: Doing boot task: commit-boot-mode
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Notice>: boot-mode committed: (null)
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Notice>: Doing boot task: restore-datapartition
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Notice>: restore-datapartition: optional boot task not present
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: mount-phase-2
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Notice>: Doing boot task: init-with-data-volume
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: MSUEarlyBootTask
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: fips
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: keybag
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: usermanagerd
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: init_featureflags
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: fud
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: tzinit
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: finish-restore
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: finish-demo-restore
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: sysstatuscheck
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: prng_seedctl
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Error>: Unable to open /System/Library/xpc/launchd.plist [2:No such file or directory]
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: launchd_cache_loader
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Error>: No MRM cache found
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Warning>: Unable to load cache
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Notice>: launchd UUID: 4C2464F5-9F87-31DE-B252-584E3391D4FA
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] <Notice>: Early boot complete. Continuing system boot.
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: entering bootstrap mode
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker) <Warning>: Unknown key for Boolean: EnablePressureExit
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Error>: com.apple.KeyMaker (lint): Unable to find persona with type 6: kpersona_find returned -1
-objc[4]: Class AMSupportURLConnectionDelegate is implemented in both ?? (0x105e7c000) and ?? (0x10688c028). One of the two will be used. Which one is undefined.
-objc[4]: Class AMSupportURLSession is implemented in both ?? (0x105e7c050) and ?? (0x10688c078). One of the two will be used. Which one is undefined.
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Error>: com.apple.PurpleReverseProxy.ramdisk (lint): Unable to find persona with type 6: kpersona_find returned -1
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Error>: com.apple.diskimagesiod.ram (lint): Unable to find persona with type 6: kpersona_find returned -1
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Error>: com.apple.restored_external (lint): Unable to find persona with type 6: kpersona_find returned -1
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Error>: Failed to bootstrap path: path = /System/Library/NanoLaunchDaemonsAltAccount, error = 2: No such file or directory
-[20:09:01.0167-GMT]{1>4} CHECKPOINT ANOMALY: [check_collection]auto-boot(does_not_exist)
-[20:09:01.0196-GMT]{1>4} CHECKPOINT PROGRESS: START (unknown) -> (initial_monitor_no_return)
-[20:09:01.0208-GMT]{1>4} CHECKPOINT NOTICE: NVRAM access available on initial check
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Error>: Failed to bootstrap path: path = /System/Library/NanoLaunchDaemons, error = 2: No such file or directory
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Error>: Failed to bootstrap path: path = /AppleInternal/Library/LaunchDaemons, error = 2: No such file or directory
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: Restore environment starting.
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: entering ondemand mode
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: fsck
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: mount-phase-1
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: data-protection
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: finish-obliteration
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: Doing boot task: commit-boot-mode
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: boot-mode committed: (null)
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: Doing boot task: restore-datapartition
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: restore-datapartition: optional boot task not present
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: mount-phase-2
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: Doing boot task: init-with-data-volume
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: MSUEarlyBootTask
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: fips
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: keybag
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: usermanagerd
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: init_featureflags
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: fud
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: tzinit
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: finish-restore
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: finish-demo-restore
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: sysstatuscheck
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: prng_seedctl
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Error>: Unable to open /System/Library/xpc/launchd.plist [2:No such file or directory]
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: Skipping boot-task: launchd_cache_loader
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Error>: No MRM cache found
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Warning>: Unable to load cache
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: launchd UUID: 4C2464F5-9F87-31DE-B252-584E3391D4FA
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] <Notice>: Early boot complete. Continuing system boot.
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: entering bootstrap mode
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker) <Warning>: Unknown key for Boolean: EnablePressureExit
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Error>: com.apple.KeyMaker (lint): Unable to find persona with type 6: kpersona_find returned -1
+objc[4]: Class AMSupportURLConnectionDelegate is implemented in both ?? (0x105ec8000) and ?? (0x1068d8028). One of the two will be used. Which one is undefined.
+objc[4]: Class AMSupportURLSession is implemented in both ?? (0x105ec8050) and ?? (0x1068d8078). One of the two will be used. Which one is undefined.
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Error>: com.apple.PurpleReverseProxy.ramdisk (lint): Unable to find persona with type 6: kpersona_find returned -1
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Error>: com.apple.diskimagesiod.ram (lint): Unable to find persona with type 6: kpersona_find returned -1
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Error>: com.apple.restored_external (lint): Unable to find persona with type 6: kpersona_find returned -1
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Error>: Failed to bootstrap path: path = /System/Library/NanoLaunchDaemonsAltAccount, error = 2: No such file or directory
+[21:14:05.0140-GMT]{1>4} CHECKPOINT ANOMALY: [check_collection]auto-boot(does_not_exist)
+[21:14:05.0191-GMT]{1>4} CHECKPOINT PROGRESS: START (unknown) -> (initial_monitor_no_return)
+[21:14:05.0205-GMT]{1>4} CHECKPOINT NOTICE: NVRAM access available on initial check
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Error>: Failed to bootstrap path: path = /System/Library/NanoLaunchDaemons, error = 2: No such file or directory
 restore-anomalies = {0x00000000:[check_collection]auto-boot(does_not_exist)}
 restore-outcome = initial_monitor_no_return
 executing /usr/sbin/nvram -s restore-outcome=initial_monitor_no_return
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: Enabling PGuard for service: com.apple.PurpleReverseProxy.ramdisk
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: exiting bootstrap mode
-Wed Nov 11 20:08:58 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: exiting ondemand mode
-[20:09:01.0699-GMT]{1>4} CHECKPOINT NOTICE: (NVRAM set) restore-outcome=initial_monitor_no_return [sync=true] (initial entry)
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Error>: Failed to bootstrap path: path = /AppleInternal/Library/LaunchDaemons, error = 2: No such file or directory
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: Enabling PGuard for service: com.apple.KeyMaker
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: exiting bootstrap mode
+[21:14:05.0828-GMT]{1>4} CHECKPOINT NOTICE: (NVRAM set) restore-outcome=initial_monitor_no_return [sync=true] (initial entry)
 entering set_boot_stage
-[20:09:01.0773-GMT]{1>4} CHECKPOINT MONITOR: [0x0204] boot_stage
+[21:14:05.0922-GMT]{1>4} CHECKPOINT MONITOR: [0x0204] boot_stage
 restore-step-monitor = {0x11010204:"boot_stage"}
 executing /sbin/mount_tmpfs /mnt5
+Wed Nov 11 21:14:01 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: exiting ondemand mode
 entering show_service_nodes
 disk0
 
 IOBlockStorageDriver RegistryID : 0x100000326 Busy State : 0x0 Service State : 0x1e
-NS_01 RegistryID : 0x100000324 Busy State : 0x0 Service State : 0x1e
-AppleANS2NVMeController RegistryID : 0x1000002ae Busy State : 0x0 Service State : 0x1e
-RTBuddyService RegistryID : 0x10000029d Busy State : 0x0 Service State : 0x1e
-RTBuddyV2 RegistryID : 0x10000028f Busy State : 0x0 Service State : 0x1e
+NS_01 RegistryID : 0x100000325 Busy State : 0x0 Service State : 0x1e
+AppleANS2NVMeController RegistryID : 0x100000293 Busy State : 0x0 Service State : 0x1e
+RTBuddyService RegistryID : 0x10000028f Busy State : 0x0 Service State : 0x1e
+RTBuddyV2 RegistryID : 0x100000258 Busy State : 0x0 Service State : 0x1e
 iop-ans-nub RegistryID : 0x10000012f Busy State : 0x0 Service State : 0x1e
-AppleASCWrapV2 RegistryID : 0x1000001f8 Busy State : 0x0 Service State : 0x0
+AppleASCWrapV2 RegistryID : 0x1000001e2 Busy State : 0x0 Service State : 0x0
 ans RegistryID : 0x10000012e Busy State : 0x0 Service State : 0x1e
-AppleT803xIO RegistryID : 0x1000001b7 Busy State : 0x1 Service State : 0x1e
+AppleT803xIO RegistryID : 0x1000001c1 Busy State : 0x1 Service State : 0x1e
 arm-io RegistryID : 0x100000113 Busy State : 0x1 Service State : 0x1e
 AppleARMPE RegistryID : 0x1000001ab Busy State : 0x1 Service State : 0x1e
 N104DEV RegistryID : 0x1000001aa Busy State : 0x1 Service State : 0x1e
 Root RegistryID : 0x100000100 Busy State : 0x0 Service State : 0x0
 ----
 
-[20:09:02.0116-GMT]{1>4} CHECKPOINT MONITOR: [0x1180] create_ramdisk
+[21:14:06.0551-GMT]{1>4} CHECKPOINT MONITOR: [0x1180] create_ramdisk
 restore-step-monitor = {0x11011180:"create_ramdisk"}
-[20:09:02.0133-GMT]{1>4} CHECKPOINT MONITOR: [0x0206] monitoring_child
+[21:14:06.0594-GMT]{1>4} CHECKPOINT MONITOR: [0x0206] monitoring_child
 restore-step-monitor = {0x11010206:"monitoring_child"}
-objc[7]: Class AMSupportURLConnectionDelegate is implemented in both ?? (0x103874000) and ?? (0x104284028). One of the two will be used. Which one is undefined.
-objc[7]: Class AMSupportURLSession is implemented in both ?? (0x103874050) and ?? (0x104284078). One of the two will be used. Which one is undefined.
+objc[7]: Class AMSupportURLConnectionDelegate is implemented in both ?? (0x101f48000) and ?? (0x102958028). One of the two will be used. Which one is undefined.
+objc[7]: Class AMSupportURLSession is implemented in both ?? (0x101f48050) and ?? (0x102958078). One of the two will be used. Which one is undefined.
 libMobileGestalt MobileGestalt.c:711: RestoreLog: Client Query: Image4Supported
-2026-11-11 20:09:03.128833+0000 restored_external[7:582] RestoreLog: Client Query: Image4Supported
+2026-11-11 21:14:07.676878+0000 restored_external[7:577] RestoreLog: Client Query: Image4Supported
 libMobileGestalt utility.c:64: Could not open /private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches/com.apple.MobileGestalt.plist: No such file or directory
-2026-11-11 20:09:03.180801+0000 restored_external[7:582] Could not open /private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches/com.apple.MobileGestalt.plist: No such file or directory
+2026-11-11 21:14:07.734134+0000 restored_external[7:577] Could not open /private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches/com.apple.MobileGestalt.plist: No such file or directory
 libMobileGestalt MobileGestalt.c:743: RestoreLog: Client Response: Image4Supported : true
-2026-11-11 20:09:03.236433+0000 restored_external[7:582] RestoreLog: Client Response: Image4Supported : 1
-[20:09:03.0251-GMT]{4>7} CHECKPOINT NOTICE: Image4 device: AP nonce clearable
+2026-11-11 21:14:07.798450+0000 restored_external[7:577] RestoreLog: Client Response: Image4Supported : 1
+[21:14:07.0816-GMT]{4>7} CHECKPOINT NOTICE: Image4 device: AP nonce clearable
 entering ramrod_clear_ap_nonce
-[20:09:03.0295-GMT]{4>7} CHECKPOINT NOTICE: AP nonce consumed
-[20:09:03.0310-GMT]{4>7} CHECKPOINT NOTICE: Pre-existing NVRAM variable: restore-outcome=initial_monitor_no_return
-[20:09:03.0335-GMT]{4>7} CHECKPOINT ANOMALY: [check_collection]auto-boot(does_not_exist)
-[20:09:03.0349-GMT]{4>7} CHECKPOINT PROGRESS: START (unknown) -> (initial_engine_no_return)
-[20:09:03.0363-GMT]{4>7} CHECKPOINT NOTICE: NVRAM access available on initial check
+[21:14:07.0862-GMT]{4>7} CHECKPOINT NOTICE: AP nonce consumed
+[21:14:07.0877-GMT]{4>7} CHECKPOINT NOTICE: Pre-existing NVRAM variable: restore-outcome=initial_monitor_no_return
+[21:14:07.0909-GMT]{4>7} CHECKPOINT ANOMALY: [check_collection]auto-boot(does_not_exist)
+[21:14:07.0923-GMT]{4>7} CHECKPOINT PROGRESS: START (unknown) -> (initial_engine_no_return)
+[21:14:07.0937-GMT]{4>7} CHECKPOINT NOTICE: NVRAM access available on initial check
 restore-anomalies = {0x00000000:[check_collection]auto-boot(does_not_exist)}
 restore-outcome = initial_engine_no_return
 executing /usr/sbin/nvram restore-outcome=initial_engine_no_return
-[20:09:03.0669-GMT]{4>7} CHECKPOINT BEGIN: MAIN:[0x0400] umask
+[21:14:08.0252-GMT]{4>7} CHECKPOINT BEGIN: MAIN:[0x0400] umask
 restore-step-ids = {0x11030400:1}
 restore-step-names = {0x11030400:umask}
-restore-step-uptime = 9
+restore-step-uptime = 11
 restore-step-user-progress = -1
-[20:09:03.0703-GMT]{4>7} CHECKPOINT END: MAIN:[0x0400] umask
+[21:14:08.0284-GMT]{4>7} CHECKPOINT END: MAIN:[0x0400] umask
 restore-step-ids = {}
 restore-step-names = {}
-restore-step-uptime = 9
+restore-step-uptime = 11
 restore-step-user-progress = -1
-[20:09:03.0731-GMT]{4>7} CHECKPOINT BEGIN: MAIN:[0x0402] setvbuf
+[21:14:08.0311-GMT]{4>7} CHECKPOINT BEGIN: MAIN:[0x0402] setvbuf
 restore-step-ids = {0x11030402:2}
 restore-step-names = {0x11030402:setvbuf}
-restore-step-uptime = 9
+restore-step-uptime = 11
 restore-step-user-progress = -1
-[20:09:03.0762-GMT]{4>7} CHECKPOINT END: MAIN:[0x0402] setvbuf
+[21:14:08.0341-GMT]{4>7} CHECKPOINT END: MAIN:[0x0402] setvbuf
 restore-step-ids = {}
 restore-step-names = {}
-restore-step-uptime = 9
+restore-step-uptime = 11
 restore-step-user-progress = -1
-[20:09:03.0789-GMT]{4>7} CHECKPOINT BEGIN: MAIN:[0x0403] kernel_logger_thread
+[21:14:08.0369-GMT]{4>7} CHECKPOINT BEGIN: MAIN:[0x0403] kernel_logger_thread
 restore-step-ids = {0x11030403:3}
 restore-step-names = {0x11030403:kernel_logger_thread}
-restore-step-uptime = 9
+restore-step-uptime = 11
 restore-step-user-progress = -1
-[20:09:03.0826-GMT]{4>7} CHECKPOINT END: MAIN:[0x0403] kernel_logger_thread
+[21:14:08.0411-GMT]{4>7} CHECKPOINT END: MAIN:[0x0403] kernel_logger_thread
 restore-step-ids = {}
 restore-step-names = {}
-restore-step-uptime = 9
+restore-step-uptime = 11
 restore-step-user-progress = -1
-[20:09:03.0858-GMT]{4>7} CHECKPOINT BEGIN: MAIN:[0x0406] set_progress_0
+[21:14:08.0440-GMT]{4>7} CHECKPOINT BEGIN: MAIN:[0x0406] set_progress_0
 restore-step-ids = {0x11030406:4}
 restore-step-names = {0x11030406:set_progress_0}
-restore-step-uptime = 9
+restore-step-uptime = 11
 restore-step-user-progress = -1
 libMobileGestalt MobileGestalt.c:711: RestoreLog: Client Query: DeviceClass
-2026-11-11 20:09:03.908958+0000 restored_external[7:582] RestoreLog: Client Query: DeviceClass
+2026-11-11 21:14:08.485547+0000 restored_external[7:577] RestoreLog: Client Query: DeviceClass
 libMobileGestalt MobileGestalt.c:743: RestoreLog: Client Response: DeviceClass : iPhone
-2026-11-11 20:09:03.936274+0000 restored_external[7:582] RestoreLog: Client Response: DeviceClass : iPhone
+2026-11-11 21:14:08.513263+0000 restored_external[7:577] RestoreLog: Client Response: DeviceClass : iPhone
 libMobileGestalt MobileGestalt.c:711: RestoreLog: Client Query: DeviceColorMapPolicy
-2026-11-11 20:09:03.960149+0000 restored_external[7:582] RestoreLog: Client Query: DeviceColorMapPolicy
+2026-11-11 21:14:08.539073+0000 restored_external[7:577] RestoreLog: Client Query: DeviceColorMapPolicy
 libMobileGestalt MobileGestalt.c:743: RestoreLog: Client Response: DeviceColorMapPolicy : 0
-2026-11-11 20:09:03.990533+0000 restored_external[7:582] RestoreLog: Client Response: DeviceColorMapPolicy : 0
-2026-11-11 20:09:04.010712+0000 restored_external[7:582] IOMFB: /System/Library/Frameworks/MediaToolbox.framework/MediaToolbox not found
-2026-11-11 20:09:04.030035+0000 restored_external[7:582] IOMFB: /System/Library/PrivateFrameworks/MediaToolbox.framework/MediaToolbox not found
-2026-11-11 20:09:04.049234+0000 restored_external[7:582] IOMFB: /System/Library/PrivateFrameworks/Celestial.framework/Celestial not found
-2026-11-11 20:09:04.066875+0000 restored_external[7:582] IOMFB: FigInstallVirtualDisplay not found
+2026-11-11 21:14:08.575670+0000 restored_external[7:577] RestoreLog: Client Response: DeviceColorMapPolicy : 0
+2026-11-11 21:14:08.601170+0000 restored_external[7:577] IOMFB: /System/Library/Frameworks/MediaToolbox.framework/MediaToolbox not found
+2026-11-11 21:14:08.623007+0000 restored_external[7:577] IOMFB: /System/Library/PrivateFrameworks/MediaToolbox.framework/MediaToolbox not found
+2026-11-11 21:14:08.646139+0000 restored_external[7:577] IOMFB: /System/Library/PrivateFrameworks/Celestial.framework/Celestial not found
+2026-11-11 21:14:08.667630+0000 restored_external[7:577] IOMFB: FigInstallVirtualDisplay not found
 found display: primary
-2026-11-11 20:09:04.136384+0000 restored_external[7:582] [User Defaults] Could not connect to cfprefsd. No CFPreferences/NSUserDefaults changes will be saved
+2026-11-11 21:14:08.750012+0000 restored_external[7:577] [User Defaults] Could not connect to cfprefsd. No CFPreferences/NSUserDefaults changes will be saved
 libMobileGestalt MobileGestalt.c:711: RestoreLog: Client Query: main-screen-scale
-2026-11-11 20:09:04.179077+0000 restored_external[7:582] RestoreLog: Client Query: main-screen-scale
+2026-11-11 21:14:08.800358+0000 restored_external[7:577] RestoreLog: Client Query: main-screen-scale
 libMobileGestalt MobileGestalt.c:711: RestoreLog: Client Query: oBbtJ8x+s1q0OkaiocPuog
-2026-11-11 20:09:04.202428+0000 restored_external[7:582] RestoreLog: Client Query: oBbtJ8x+s1q0OkaiocPuog
+2026-11-11 21:14:08.827274+0000 restored_external[7:577] RestoreLog: Client Query: oBbtJ8x+s1q0OkaiocPuog
 libMobileGestalt MobileGestalt.c:188: couldn't load support library
-2026-11-11 20:09:04.227585+0000 restored_external[7:582] couldn't load support library
+2026-11-11 21:14:08.852588+0000 restored_external[7:577] couldn't load support library
 libMobileGestalt MobileGestalt.c:632: _MGSCopyAnswerFromServer can't be loaded
-2026-11-11 20:09:04.247531+0000 restored_external[7:582] _MGSCopyAnswerFromServer can't be loaded
-libMobileGestalt MobileGestalt.c:743: RestoreLog: Client Response: oBbtJ8x+s1q0OkaiocPuog : <CFData 0x10de0fe10 [0x103f681b8]>{length = 24, capacity = 24, bytes = 0x3c0300000007000046010000000000400000000013000000}
-2026-11-11 20:09:04.304108+0000 restored_external[7:582] RestoreLog: Client Response: oBbtJ8x+s1q0OkaiocPuog : {length = 24, bytes = 0x3c0300000007000046010000000000400000000013000000}
+2026-11-11 21:14:08.876873+0000 restored_external[7:577] _MGSCopyAnswerFromServer can't be loaded
+libMobileGestalt MobileGestalt.c:743: RestoreLog: Client Response: oBbtJ8x+s1q0OkaiocPuog : <CFData 0x105b0fe10 [0x10263c1b8]>{length = 24, capacity = 24, bytes = 0x3c0300000007000046010000000000400000000013000000}
+2026-11-11 21:14:08.943940+0000 restored_external[7:577] RestoreLog: Client Response: oBbtJ8x+s1q0OkaiocPuog : {length = 24, bytes = 0x3c0300000007000046010000000000400000000013000000}
 libMobileGestalt MobileGestalt.c:743: RestoreLog: Client Response: main-screen-scale : 2
-2026-11-11 20:09:04.339974+0000 restored_external[7:582] RestoreLog: Client Response: main-screen-scale : 2
+2026-11-11 21:14:08.985063+0000 restored_external[7:577] RestoreLog: Client Response: main-screen-scale : 2
 libMobileGestalt MobileGestalt.c:711: RestoreLog: Client Query: main-screen-orientation
-2026-11-11 20:09:04.364348+0000 restored_external[7:582] RestoreLog: Client Query: main-screen-orientation
+2026-11-11 21:14:09.012262+0000 restored_external[7:577] RestoreLog: Client Query: main-screen-orientation
 libMobileGestalt MobileGestalt.c:711: RestoreLog: Client Query: oBbtJ8x+s1q0OkaiocPuog
-2026-11-11 20:09:04.388349+0000 restored_external[7:582] RestoreLog: Client Query: oBbtJ8x+s1q0OkaiocPuog
-libMobileGestalt MobileGestalt.c:743: RestoreLog: Client Response: oBbtJ8x+s1q0OkaiocPuog : <CFData 0x10de0fe10 [0x103f681b8]>{length = 24, capacity = 24, bytes = 0x3c0300000007000046010000000000400000000013000000}
-2026-11-11 20:09:04.427592+0000 restored_external[7:582] RestoreLog: Client Response: oBbtJ8x+s1q0OkaiocPuog : {length = 24, bytes = 0x3c0300000007000046010000000000400000000013000000}
+2026-11-11 21:14:09.039365+0000 restored_external[7:577] RestoreLog: Client Query: oBbtJ8x+s1q0OkaiocPuog
+libMobileGestalt MobileGestalt.c:743: RestoreLog: Client Response: oBbtJ8x+s1q0OkaiocPuog : <CFData 0x105b0fe10 [0x10263c1b8]>{length = 24, capacity = 24, bytes = 0x3c0300000007000046010000000000400000000013000000}
+2026-11-11 21:14:09.084159+0000 restored_external[7:577] RestoreLog: Client Response: oBbtJ8x+s1q0OkaiocPuog : {length = 24, bytes = 0x3c0300000007000046010000000000400000000013000000}
 libMobileGestalt MobileGestalt.c:743: RestoreLog: Client Response: main-screen-orientation : 0.0
-2026-11-11 20:09:04.463649+0000 restored_external[7:582] RestoreLog: Client Response: main-screen-orientation : 0
+2026-11-11 21:14:09.124175+0000 restored_external[7:577] RestoreLog: Client Response: main-screen-orientation : 0
 libMobileGestalt MobileGestalt.c:711: RestoreLog: Client Query: main-screen-class
-2026-11-11 20:09:04.487738+0000 restored_external[7:582] RestoreLog: Client Query: main-screen-class
+2026-11-11 21:14:09.152623+0000 restored_external[7:577] RestoreLog: Client Query: main-screen-class
 libMobileGestalt MobileGestalt.c:711: RestoreLog: Client Query: oBbtJ8x+s1q0OkaiocPuog
-2026-11-11 20:09:04.510717+0000 restored_external[7:582] RestoreLog: Client Query: oBbtJ8x+s1q0OkaiocPuog
-libMobileGestalt MobileGestalt.c:743: RestoreLog: Client Response: oBbtJ8x+s1q0OkaiocPuog : <CFData 0x10de0fe10 [0x103f681b8]>{length = 24, capacity = 24, bytes = 0x3c0300000007000046010000000000400000000013000000}
-2026-11-11 20:09:04.551039+0000 restored_external[7:582] RestoreLog: Client Response: oBbtJ8x+s1q0OkaiocPuog : {length = 24, bytes = 0x3c0300000007000046010000000000400000000013000000}
+2026-11-11 21:14:09.181132+0000 restored_external[7:577] RestoreLog: Client Query: oBbtJ8x+s1q0OkaiocPuog
+libMobileGestalt MobileGestalt.c:743: RestoreLog: Client Response: oBbtJ8x+s1q0OkaiocPuog : <CFData 0x105b0fe10 [0x10263c1b8]>{length = 24, capacity = 24, bytes = 0x3c0300000007000046010000000000400000000013000000}
+2026-11-11 21:14:09.225668+0000 restored_external[7:577] RestoreLog: Client Response: oBbtJ8x+s1q0OkaiocPuog : {length = 24, bytes = 0x3c0300000007000046010000000000400000000013000000}
 libMobileGestalt MobileGestalt.c:743: RestoreLog: Client Response: main-screen-class : 19
-2026-11-11 20:09:04.586025+0000 restored_external[7:582] RestoreLog: Client Response: main-screen-class : 19
+2026-11-11 21:14:09.267186+0000 restored_external[7:577] RestoreLog: Client Response: main-screen-class : 19
 libMobileGestalt MobileGestalt.c:711: RestoreLog: Client Query: DisplayBootRotation
-2026-11-11 20:09:04.609291+0000 restored_external[7:582] RestoreLog: Client Query: DisplayBootRotation
+2026-11-11 21:14:09.294615+0000 restored_external[7:577] RestoreLog: Client Query: DisplayBootRotation
 libMobileGestalt MobileGestalt.c:743: RestoreLog: Client Response: DisplayBootRotation : 0
-2026-11-11 20:09:04.634429+0000 restored_external[7:582] RestoreLog: Client Response: DisplayBootRotation : 0
+2026-11-11 21:14:09.323394+0000 restored_external[7:577] RestoreLog: Client Response: DisplayBootRotation : 0
 display-boot-rotation = 0
 display-scale = 2
 display-rotation = 0
 libMobileGestalt MobileGestalt.c:711: RestoreLog: Client Query: DeviceClassNumber
-2026-11-11 20:09:04.671213+0000 restored_external[7:582] RestoreLog: Client Query: DeviceClassNumber
+2026-11-11 21:14:09.368514+0000 restored_external[7:577] RestoreLog: Client Query: DeviceClassNumber
 libMobileGestalt MobileGestalt.c:743: RestoreLog: Client Response: DeviceClassNumber : 1
-2026-11-11 20:09:04.693776+0000 restored_external[7:582] RestoreLog: Client Response: DeviceClassNumber : 1
+2026-11-11 21:14:09.396460+0000 restored_external[7:577] RestoreLog: Client Response: DeviceClassNumber : 1
 libMobileGestalt MobileGestalt.c:711: RestoreLog: Client Query: DeviceSupportsUSBTypeC
-2026-11-11 20:09:04.717871+0000 restored_external[7:582] RestoreLog: Client Query: DeviceSupportsUSBTypeC
+2026-11-11 21:14:09.423667+0000 restored_external[7:577] RestoreLog: Client Query: DeviceSupportsUSBTypeC
 libMobileGestalt MobileGestalt.c:743: RestoreLog: Client Response: DeviceSupportsUSBTypeC : false
-2026-11-11 20:09:04.745161+0000 restored_external[7:582] RestoreLog: Client Response: DeviceSupportsUSBTypeC : 0
+2026-11-11 21:14:09.455029+0000 restored_external[7:577] RestoreLog: Client Response: DeviceSupportsUSBTypeC : 0
 found applelogo at /usr/share/progressui/applelogo@1792~iphone.tga
 display: 828 x 1792
 libMobileGestalt MobileGestalt.c:711: RestoreLog: Client Query: DeviceClassNumber
-2026-11-11 20:09:04.790978+0000 restored_external[7:582] RestoreLog: Client Query: DeviceClassNumber
+2026-11-11 21:14:09.505595+0000 restored_external[7:577] RestoreLog: Client Query: DeviceClassNumber
 libMobileGestalt MobileGestalt.c:743: RestoreLog: Client Response: DeviceClassNumber : 1
-2026-11-11 20:09:04.813711+0000 restored_external[7:582] RestoreLog: Client Response: DeviceClassNumber : 1
+2026-11-11 21:14:09.533125+0000 restored_external[7:577] RestoreLog: Client Response: DeviceClassNumber : 1
 Progress Bar Y offset at 112, display class 19
 powering on display
 ramrod_display_set_granular_progress_forced: 0.000000
 IOMFB: load PCC M3 IMem : size 0x483c
 IOMFB: load PCC M3 DMem : size 0x4794
-2026-11-11 20:09:05.061356+0000 restored_external[7:582] IOMFB: /System/Library/PrivateFrameworks/AggregateDictionary.framework/AggregateDictionary not found
-2026-11-11 20:09:05.080939+0000 restored_external[7:582] IOMFB: ADClientSetValueForScalarKey not found
-2026-11-11 20:09:05.094101+0000 restored_external[7:582] IOMFB: ADClientAddValueForScalarKey not found
-[20:09:05.0106-GMT]{4>7} CHECKPOINT END: MAIN:[0x0406] set_progress_0
-restore-step-ids = {}
-restore-step-names = {}
-restore-step-uptime = 11
-restore-step-user-progress = 0
-[20:09:05.0130-GMT]{4>7} CHECKPOINT BEGIN: MAIN:[0x0407] start_gasgauge_thread
-restore-step-ids = {0x11030407:5}
-restore-step-names = {0x11030407:start_gasgauge_thread}
-restore-step-uptime = 11
-restore-step-user-progress = 0
-[20:09:05.0166-GMT]{4>7} CHECKPOINT WARNING: MAIN:[0x0407] gasgauge_start_update_thread failed: -1
-restored_external: gasgauge_start_update_thread failed: -1
-[20:09:05.0186-GMT]{4>7} CHECKPOINT END: MAIN:[0x0407] start_gasgauge_thread
-restore-step-ids = {}
-restore-step-names = {}
-restore-step-warnings = {0x11060407:{0:"gasgauge_start_update_thread failed: -1"}}
-restore-step-uptime = 11
-restore-step-user-progress = 0
-[20:09:05.0223-GMT]{4>7} CHECKPOINT BEGIN: MAIN:[0x0408] listen_for_log_client
-restore-step-ids = {0x11030408:6}
-restore-step-names = {0x11030408:listen_for_log_client}
-restore-step-uptime = 11
-restore-step-user-progress = 0
-[20:09:05.0258-GMT]{4>7} CHECKPOINT END: MAIN:[0x0408] listen_for_log_client
-restore-step-ids = {}
-restore-step-names = {}
-restore-step-uptime = 11
-restore-step-user-progress = 0
-[20:09:05.0284-GMT]{4>7} CHECKPOINT BEGIN: MAIN:[0x040D] create_listen_socket
-restore-step-ids = {0x1103040D:7}
-restore-step-names = {0x1103040D:create_listen_socket}
-restore-step-uptime = 11
-restore-step-user-progress = 0
-[20:09:05.0315-GMT]{4>7} CHECKPOINT END: MAIN:[0x040D] create_listen_socket
-restore-step-ids = {}
-restore-step-names = {}
-restore-step-uptime = 11
-restore-step-user-progress = 0
-[20:09:05.0340-GMT]{4>7} CHECKPOINT BEGIN: MAIN:[0x0404] update_root_mount
-restore-step-ids = {0x11030404:8}
-restore-step-names = {0x11030404:update_root_mount}
-restore-step-uptime = 11
-restore-step-user-progress = 0
-[20:09:05.0393-GMT]{4>7} CHECKPOINT END: MAIN:[0x0404] update_root_mount
-restore-step-ids = {}
-restore-step-names = {}
-restore-step-uptime = 11
-restore-step-user-progress = 0
-[20:09:05.0417-GMT]{4>7} CHECKPOINT BEGIN: MAIN:[0x0405] disable_watchdog
-restore-step-ids = {0x11030405:9}
-restore-step-names = {0x11030405:disable_watchdog}
-restore-step-uptime = 11
-restore-step-user-progress = 0
-[20:09:05.0450-GMT]{4>7} CHECKPOINT END: MAIN:[0x0405] disable_watchdog
-restore-step-ids = {}
-restore-step-names = {}
-restore-step-uptime = 11
-restore-step-user-progress = 0
-[20:09:05.0475-GMT]{4>7} CHECKPOINT BEGIN: MAIN:[0x040E] enable_usb
-restore-step-ids = {0x1103040E:10}
-restore-step-names = {0x1103040E:enable_usb}
-restore-step-uptime = 11
-restore-step-user-progress = 0
-libMobileGestalt MobileGestalt.c:711: RestoreLog: Client Query: UniqueDeviceID
-2026-11-11 20:09:05.530912+0000 restored_external[7:582] RestoreLog: Client Query: UniqueDeviceID
-libMobileGestalt MobileGestalt.c:711: RestoreLog: Client Query: nFRqKto/RuQAV1P+0/qkBA
-2026-11-11 20:09:05.553163+0000 restored_external[7:582] RestoreLog: Client Query: nFRqKto/RuQAV1P+0/qkBA
-libMobileGestalt MobileGestalt.c:711: RestoreLog: Client Query: TF31PAB6aO8KAbPyNKSxKA
-2026-11-11 20:09:05.579079+0000 restored_external[7:582] RestoreLog: Client Query: TF31PAB6aO8KAbPyNKSxKA
-libMobileGestalt MobileGestalt.c:743: RestoreLog: Client Response: TF31PAB6aO8KAbPyNKSxKA : 1234605616436508552
-2026-11-11 20:09:05.607935+0000 restored_external[7:582] RestoreLog: Client Response: TF31PAB6aO8KAbPyNKSxKA : 1234605616436508552
-libMobileGestalt MobileGestalt.c:711: RestoreLog: Client Query: 566JrJVMlDfnslGpwUzNlQ
-2026-11-11 20:09:05.633354+0000 restored_external[7:582] RestoreLog: Client Query: 566JrJVMlDfnslGpwUzNlQ
-libMobileGestalt MobileGestalt.c:743: RestoreLog: Client Response: 566JrJVMlDfnslGpwUzNlQ : 32816
-2026-11-11 20:09:05.660589+0000 restored_external[7:582] RestoreLog: Client Response: 566JrJVMlDfnslGpwUzNlQ : 32816
-libMobileGestalt MobileGestalt.c:743: RestoreLog: Client Response: nFRqKto/RuQAV1P+0/qkBA : <CFData 0x10de133b0 [0x103f681b8]>{length = 25, capacity = 25, bytes = 0x30303030383033302d31313232333334 ... 3535363637373838}
-2026-11-11 20:09:05.714280+0000 restored_external[7:582] RestoreLog: Client Response: nFRqKto/RuQAV1P+0/qkBA : {length = 25, bytes = 0x30303030 38303330 2d313132 32333334 ... 35353636 37373838 }
-libMobileGestalt MobileGestalt.c:743: RestoreLog: Client Response: UniqueDeviceID : 00008030-1122334455667788
-2026-11-11 20:09:05.750340+0000 restored_external[7:582] RestoreLog: Client Response: UniqueDeviceID : 00008030-1122334455667788
-000015.638709 AppleT8027USBXDCI@: IOUSBDeviceController::createUSBDevice: configuration: Apple Mobile Device
-000015.651198 AppleT8027USBXDCI@: IOUSBDeviceController::createUSBDevice:    interface: AppleUSBMux
-000015.664085 AppleT8027USBXDCI@: IOUSBDeviceController::createUSBDevice: configuration: Reserved 1 + Apple Mobile Device
-000015.679800 AppleT8027USBXDCI@: IOUSBDeviceController::createUSBDevice:    interface: Reserved
-000015.690558 AppleT8027USBXDCI@: IOUSBDeviceController::createUSBDevice:    interface: AppleUSBMux
-000015.701913 AppleT8027USBXDCI@: IOUSBDeviceController::createUSBDevice: configuration: Reserved 2 + Apple Mobile Device
-000015.715641 AppleT8027USBXDCI@: IOUSBDeviceController::createUSBDevice:    interface: Reserved
-000015.726192 AppleT8027USBXDCI@: IOUSBDeviceController::createUSBDevice:    interface: AppleUSBMux
-000015.738046 AppleT8027USBXDCI@: IOUSBDeviceController::createUSBDevice: configuration: Reserved 3 + Apple Mobile Device
-000015.751864 AppleT8027USBXDCI@: IOUSBDeviceController::createUSBDevice:    interface: Reserved
-000015.762620 AppleT8027USBXDCI@: IOUSBDeviceController::createUSBDevice:    interface: AppleUSBMux
-000015.783539 AppleT8027USBXDCI@: IOUSBDeviceController::gated_registerFunction: register function Reserved
-AppleUSBDeviceMux build: Aug 12 2020 22:50:42
-000015.814415 AppleT8027USBXDCI@: IOUSBDeviceController::gated_registerFunction: register function AppleUSBMux
-000015.828498 AppleT8027USBXDCI@: IOUSBDeviceController::startUSBStack: starting usb stack
-000015.841893 AppleT8027USBXDCI@0: IOUSBDeviceController::startUSBStack: not connected
-000015.852503 AppleT8027USBXDCI@0: AppleUSBXDCI::goOnBus: not on bus
-000015.862637 AppleT8027USBXDCI@0: AppleUSBXDCIARM::cableChangeOccurred: cable detect disabled: transport type 2 connect type 2 restricted mode _lastRestrictedMode 0
-000015.883193 AppleT8027USBXDCI@0: AppleUSBXDCIARM::cableChangeOccurred: powering on for transport type 2 connect type 2 restricted mode 0
-IOReturn AppleUSBDeviceMux::setPropertiesGated(OSObject *) setting debug level to 7
-[20:09:06.0057-GMT]{4>7} CHECKPOINT END: MAIN:[0x040E] enable_usb
+2026-11-11 21:14:09.782169+0000 restored_external[7:577] IOMFB: /System/Library/PrivateFrameworks/AggregateDictionary.framework/AggregateDictionary not found
+2026-11-11 21:14:09.804238+0000 restored_external[7:577] IOMFB: ADClientSetValueForScalarKey not found
+2026-11-11 21:14:09.819000+0000 restored_external[7:577] IOMFB: ADClientAddValueForScalarKey not found
+[21:14:09.0836-GMT]{4>7} CHECKPOINT END: MAIN:[0x0406] set_progress_0
 restore-step-ids = {}
 restore-step-names = {}
 restore-step-uptime = 12
 restore-step-user-progress = 0
+[21:14:09.0864-GMT]{4>7} CHECKPOINT BEGIN: MAIN:[0x0407] start_gasgauge_thread
+restore-step-ids = {0x11030407:5}
+restore-step-names = {0x11030407:start_gasgauge_thread}
+restore-step-uptime = 12
+restore-step-user-progress = 0
+[21:14:09.0910-GMT]{4>7} CHECKPOINT WARNING: MAIN:[0x0407] gasgauge_start_update_thread failed: -1
+restored_external: gasgauge_start_update_thread failed: -1
+[21:14:09.0936-GMT]{4>7} CHECKPOINT END: MAIN:[0x0407] start_gasgauge_thread
+restore-step-ids = {}
+restore-step-names = {}
+restore-step-warnings = {0x11060407:{0:"gasgauge_start_update_thread failed: -1"}}
+restore-step-uptime = 12
+restore-step-user-progress = 0
+[21:14:09.0987-GMT]{4>7} CHECKPOINT BEGIN: MAIN:[0x0408] listen_for_log_client
+restore-step-ids = {0x11030408:6}
+restore-step-names = {0x11030408:listen_for_log_client}
+restore-step-uptime = 12
+restore-step-user-progress = 0
+[21:14:10.0030-GMT]{4>7} CHECKPOINT END: MAIN:[0x0408] listen_for_log_client
+restore-step-ids = {}
+restore-step-names = {}
+restore-step-uptime = 13
+restore-step-user-progress = 0
+[21:14:10.0069-GMT]{4>7} CHECKPOINT BEGIN: MAIN:[0x040D] create_listen_socket
+restore-step-ids = {0x1103040D:7}
+restore-step-names = {0x1103040D:create_listen_socket}
+restore-step-uptime = 13
+restore-step-user-progress = 0
+[21:14:10.0115-GMT]{4>7} CHECKPOINT END: MAIN:[0x040D] create_listen_socket
+restore-step-ids = {}
+restore-step-names = {}
+restore-step-uptime = 13
+restore-step-user-progress = 0
+[21:14:10.0154-GMT]{4>7} CHECKPOINT BEGIN: MAIN:[0x0404] update_root_mount
+restore-step-ids = {0x11030404:8}
+restore-step-names = {0x11030404:update_root_mount}
+restore-step-uptime = 13
+restore-step-user-progress = 0
+[21:14:10.0227-GMT]{4>7} CHECKPOINT END: MAIN:[0x0404] update_root_mount
+restore-step-ids = {}
+restore-step-names = {}
+restore-step-uptime = 13
+restore-step-user-progress = 0
+[21:14:10.0261-GMT]{4>7} CHECKPOINT BEGIN: MAIN:[0x0405] disable_watchdog
+restore-step-ids = {0x11030405:9}
+restore-step-names = {0x11030405:disable_watchdog}
+restore-step-uptime = 13
+restore-step-user-progress = 0
+[21:14:10.0301-GMT]{4>7} CHECKPOINT END: MAIN:[0x0405] disable_watchdog
+restore-step-ids = {}
+restore-step-names = {}
+restore-step-uptime = 13
+restore-step-user-progress = 0
+[21:14:10.0332-GMT]{4>7} CHECKPOINT BEGIN: MAIN:[0x040E] enable_usb
+restore-step-ids = {0x1103040E:10}
+restore-step-names = {0x1103040E:enable_usb}
+restore-step-uptime = 13
+restore-step-user-progress = 0
+libMobileGestalt MobileGestalt.c:711: RestoreLog: Client Query: UniqueDeviceID
+2026-11-11 21:14:10.400111+0000 restored_external[7:577] RestoreLog: Client Query: UniqueDeviceID
+libMobileGestalt MobileGestalt.c:711: RestoreLog: Client Query: nFRqKto/RuQAV1P+0/qkBA
+2026-11-11 21:14:10.429167+0000 restored_external[7:577] RestoreLog: Client Query: nFRqKto/RuQAV1P+0/qkBA
+libMobileGestalt MobileGestalt.c:711: RestoreLog: Client Query: TF31PAB6aO8KAbPyNKSxKA
+2026-11-11 21:14:10.461290+0000 restored_external[7:577] RestoreLog: Client Query: TF31PAB6aO8KAbPyNKSxKA
+libMobileGestalt MobileGestalt.c:743: RestoreLog: Client Response: TF31PAB6aO8KAbPyNKSxKA : 1234605616436508552
+2026-11-11 21:14:10.497148+0000 restored_external[7:577] RestoreLog: Client Response: TF31PAB6aO8KAbPyNKSxKA : 1234605616436508552
+libMobileGestalt MobileGestalt.c:711: RestoreLog: Client Query: 566JrJVMlDfnslGpwUzNlQ
+2026-11-11 21:14:10.532186+0000 restored_external[7:577] RestoreLog: Client Query: 566JrJVMlDfnslGpwUzNlQ
+libMobileGestalt MobileGestalt.c:743: RestoreLog: Client Response: 566JrJVMlDfnslGpwUzNlQ : 32816
+2026-11-11 21:14:10.565245+0000 restored_external[7:577] RestoreLog: Client Response: 566JrJVMlDfnslGpwUzNlQ : 32816
+libMobileGestalt MobileGestalt.c:743: RestoreLog: Client Response: nFRqKto/RuQAV1P+0/qkBA : <CFData 0x105b133b0 [0x10263c1b8]>{length = 25, capacity = 25, bytes = 0x30303030383033302d31313232333334 ... 3535363637373838}
+2026-11-11 21:14:10.627281+0000 restored_external[7:577] RestoreLog: Client Response: nFRqKto/RuQAV1P+0/qkBA : {length = 25, bytes = 0x30303030 38303330 2d313132 32333334 ... 35353636 37373838 }
+libMobileGestalt MobileGestalt.c:743: RestoreLog: Client Response: UniqueDeviceID : 00008030-1122334455667788
+2026-11-11 21:14:10.667319+0000 restored_external[7:577] RestoreLog: Client Response: UniqueDeviceID : 00008030-1122334455667788
+000018.222096 AppleT8027USBXDCI@: IOUSBDeviceController::createUSBDevice: configuration: Apple Mobile Device
+000018.236233 AppleT8027USBXDCI@: IOUSBDeviceController::createUSBDevice:    interface: AppleUSBMux
+000018.249537 AppleT8027USBXDCI@: IOUSBDeviceController::createUSBDevice: configuration: Reserved 1 + Apple Mobile Device
+000018.266763 AppleT8027USBXDCI@: IOUSBDeviceController::createUSBDevice:    interface: Reserved
+000018.280962 AppleT8027USBXDCI@: IOUSBDeviceController::createUSBDevice:    interface: AppleUSBMux
+000018.294357 AppleT8027USBXDCI@: IOUSBDeviceController::createUSBDevice: configuration: Reserved 2 + Apple Mobile Device
+000018.312828 AppleT8027USBXDCI@: IOUSBDeviceController::createUSBDevice:    interface: Reserved
+000018.325419 AppleT8027USBXDCI@: IOUSBDeviceController::createUSBDevice:    interface: AppleUSBMux
+000018.340062 AppleT8027USBXDCI@: IOUSBDeviceController::createUSBDevice: configuration: Reserved 3 + Apple Mobile Device
+000018.357955 AppleT8027USBXDCI@: IOUSBDeviceController::createUSBDevice:    interface: Reserved
+000018.371281 AppleT8027USBXDCI@: IOUSBDeviceController::createUSBDevice:    interface: AppleUSBMux
+AppleUSBDeviceMux build: Aug 12 2020 22:50:42
+000018.404858 AppleT8027USBXDCI@: IOUSBDeviceController::gated_registerFunction: register function Reserved
+000018.421112 AppleT8027USBXDCI@: IOUSBDeviceController::gated_registerFunction: register function AppleUSBMux
+000018.436462 AppleT8027USBXDCI@: IOUSBDeviceController::startUSBStack: starting usb stack
+000018.449449 AppleT8027USBXDCI@0: IOUSBDeviceController::startUSBStack: not connected
+000018.460501 AppleT8027USBXDCI@0: AppleUSBXDCI::goOnBus: not on bus
+000018.474076 AppleT8027USBXDCI@0: AppleUSBXDCIARM::cableChangeOccurred: cable detect disabled: transport type 2 connect type 2 restricted mode _lastRestrictedMode 0
+000018.495882 AppleT8027USBXDCI@0: AppleUSBXDCIARM::cableChangeOccurred: powering on for transport type 2 connect type 2 restricted mode 0
+IOReturn AppleUSBDeviceMux::setPropertiesGated(OSObject *) setting debug level to 7
+[21:14:11.0014-GMT]{4>7} CHECKPOINT END: MAIN:[0x040E] enable_usb
+restore-step-ids = {}
+restore-step-names = {}
+restore-step-uptime = 14
+restore-step-user-progress = 0
 waiting for host to trigger start of restore [timeout of 120 seconds]
-Wed Nov 11 20:09:06 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Warning>: Could not find and/or execute program specified by service: 2: No such file or directory: /usr/local/bin/KeyMaker
-Wed Nov 11 20:09:06 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Notice>: Service setup event to handle failure and will not launch until it fires.
-Wed Nov 11 20:09:06 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Error>: Missing executable detected. Job: 'com.apple.KeyMaker' Executable: '/usr/local/bin/KeyMaker'
-Wed Nov 11 20:09:06 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Warning>: Service exited with abnormal code: 78
+Wed Nov 11 21:14:11 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Warning>: Could not find and/or execute program specified by service: 2: No such file or directory: /usr/local/bin/KeyMaker
+Wed Nov 11 21:14:11 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Notice>: Service setup event to handle failure and will not launch until it fires.
+Wed Nov 11 21:14:11 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Error>: Missing executable detected. Job: 'com.apple.KeyMaker' Executable: '/usr/local/bin/KeyMaker'
+Wed Nov 11 21:14:11 2026 localhost com.apple.xpc.launchd[1] (com.apple.KeyMaker.3) <Warning>: Service exited with abnormal code: 78
 error waiting for events: timed out
-[20:11:06.0107-GMT]{4>7} CHECKPOINT NOTICE: MAIN:[0x0104] handle_new_connections
-[20:11:06.0117-GMT]{4>7} CHECKPOINT FINISHED-ENGINES:(FAILURE:1) 
-[20:11:06.0126-GMT]{4>7} CHECKPOINT PROGRESS: FAILED (initial_engine_no_return) -> (initial_engine_failure_no_return)
+[21:16:11.0069-GMT]{4>7} CHECKPOINT NOTICE: MAIN:[0x0104] handle_new_connections
+[21:16:11.0080-GMT]{4>7} CHECKPOINT FINISHED-ENGINES:(FAILURE:1) 
+[21:16:11.0089-GMT]{4>7} CHECKPOINT PROGRESS: FAILED (initial_engine_no_return) -> (initial_engine_failure_no_return)
 restore-outcome = initial_engine_failure_no_return
 executing /usr/sbin/nvram -s restore-outcome=initial_engine_failure_no_return
-[20:11:06.0390-GMT]{4>7} CHECKPOINT NOTICE: (NVRAM set) restore-outcome=initial_engine_failure_no_return [sync=true] (engine process terminating)
-[20:11:06.0475-GMT]{1>4} CHECKPOINT NOTICE: Post-engines NVRAM variable: restore-outcome=initial_engine_failure_no_return
-[20:11:06.0499-GMT]{1>4} CHECKPOINT PROGRESS: NO_REBOOT_RETRY (initial_monitor_no_return) -> (recovery_mode)
+[21:16:11.0390-GMT]{4>7} CHECKPOINT NOTICE: (NVRAM set) restore-outcome=initial_engine_failure_no_return [sync=true] (engine process terminating)
+[21:16:11.0485-GMT]{1>4} CHECKPOINT NOTICE: Post-engines NVRAM variable: restore-outcome=initial_engine_failure_no_return
+[21:16:11.0513-GMT]{1>4} CHECKPOINT PROGRESS: NO_REBOOT_RETRY (initial_monitor_no_return) -> (recovery_mode)
 restore-child-failures = {initial:EXIT(1)[REBOOT]}
 executing /usr/sbin/nvram restore-child-failures={initial:EXIT(1)[REBOOT]}
 restore-outcome = recovery_mode
 executing /usr/sbin/nvram restore-outcome=recovery_mode
 restored exited normally with status 1 - rebooting
-[20:11:07.0024-GMT]{1>4} CHECKPOINT MONITOR:(FAILURE:256) [0x020A] set_exit_status
+[21:16:12.0090-GMT]{1>4} CHECKPOINT MONITOR:(FAILURE:256) [0x020A] set_exit_status
 restore-step-monitor = {0x1101020A:"set_exit_status"}
 restored-exit-status = 0x100
 executing /usr/sbin/nvram restored-exit-status=0x100
@@ -698,21 +698,21 @@ Data volume access is restricted..Checking for path on update volume to sync rea
 
 Unable to find update partition and data volume access is restricted. Nothing to sync the ramdisk to!!
 
-[20:11:07.0390-GMT]{1>4} CHECKPOINT MONITOR:(FAILURE:1) [0x1183] sync_ramdisk
+[21:16:12.0510-GMT]{1>4} CHECKPOINT MONITOR:(FAILURE:1) [0x1183] sync_ramdisk
 restore-step-monitor = {0x11011183:"sync_ramdisk"}
-[20:11:07.0411-GMT]{1>4} CHECKPOINT MONITOR: [0x1181] unmount_ramdisk
+[21:16:12.0531-GMT]{1>4} CHECKPOINT MONITOR: [0x1181] unmount_ramdisk
 restore-step-monitor = {0x11011181:"unmount_ramdisk"}
 Tried to unmount a volume at '/mnt5' that wasn't mounted. Ignoring the error.
 successfully unmounted tmpfs
-[20:11:07.0441-GMT]{1>4} CHECKPOINT MONITOR: [0x1182] eject_ramdisk
+[21:16:12.0563-GMT]{1>4} CHECKPOINT MONITOR: [0x1182] eject_ramdisk
 restore-step-monitor = {0x11011182:"eject_ramdisk"}
-[20:11:07.0457-GMT]{1>4} CHECKPOINT FINAL-MONITOR:(FAILURE:1)  [EXIT] {initial:EXIT(1)[REBOOT]}
+[21:16:12.0581-GMT]{1>4} CHECKPOINT FINAL-MONITOR:(FAILURE:1)  [EXIT] {initial:EXIT(1)[REBOOT]}
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[20:11:07.0457-GMT]{1>4} CHECKPOINT FINAL-MONITOR:(FAILURE:1)  [EXIT] {initial:EXIT(1)[REBOOT]}
+[21:16:12.0581-GMT]{1>4} CHECKPOINT FINAL-MONITOR:(FAILURE:1)  [EXIT] {initial:EXIT(1)[REBOOT]}
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-[20:11:07.0457-GMT]{1>4} CHECKPOINT FINAL-MONITOR:(FAILURE:1)  [EXIT] {initial:EXIT(1)[REBOOT]}
+[21:16:12.0581-GMT]{1>4} CHECKPOINT FINAL-MONITOR:(FAILURE:1)  [EXIT] {initial:EXIT(1)[REBOOT]}
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Couldn't retrieve SMC Key AC-R. Got SMC error: -3
@@ -720,21 +720,21 @@ unable to kick port micro - Couldn't set AC-R to 0
 executing /sbin/reboot
 launchd launches[0] inflight messages: 0
 launchd launches[1] inflight messages: 0
-Wed Nov 11 20:11:09 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: System shutdown initiated by: reboot.13<-restored_extern.4<-launchd.1
-Wed Nov 11 20:11:09 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: committing to system shutdown
-Wed Nov 11 20:11:09 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: shutdown UNINITIALIZED -> COMMITTED
-Wed Nov 11 20:11:09 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: shutdown already committed
-Wed Nov 11 20:11:09 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: shutdown COMMITTED -> COMMITTED
-Wed Nov 11 20:11:09 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: shutdown COMMITTED -> WAITING_ON_SERVICES
-Wed Nov 11 20:11:09 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: shutdown WAITING_ON_SERVICES -> WRITE_DISABLED
-Wed Nov 11 20:11:09 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: shutdown WRITE_DISABLED -> WAITING_ON_COALITIONS
-Wed Nov 11 20:11:09 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Warning>: Found lingering process: 13 (reboot)
-Wed Nov 11 20:11:09 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: shutdown WAITING_ON_COALITIONS -> LAUNCH_SHUTDOWN_TEARDOWN
-Wed Nov 11 20:11:09 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: Userspace teardown took: 64 ms
-Wed Nov 11 20:11:09 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: Will be calling reboot(2) with flags: 0x0
-Wed Nov 11 20:11:09 2026 localhost com.apple.xpc.launchd[1] <Notice>: Quiescing queues
-Wed Nov 11 20:11:09 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: shutdown LAUNCH_SHUTDOWN_TEARDOWN -> WAITING_ON_QUIESCE
-Wed Nov 11 20:11:10 2026 localhost com.apple.xpc.launchd[1] <Notice>: bye
+Wed Nov 11 21:16:14 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: System shutdown initiated by: reboot.13<-restored_extern.4<-launchd.1
+Wed Nov 11 21:16:14 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: committing to system shutdown
+Wed Nov 11 21:16:14 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: shutdown UNINITIALIZED -> COMMITTED
+Wed Nov 11 21:16:14 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: shutdown already committed
+Wed Nov 11 21:16:14 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: shutdown COMMITTED -> COMMITTED
+Wed Nov 11 21:16:14 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: shutdown COMMITTED -> WAITING_ON_SERVICES
+Wed Nov 11 21:16:14 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: shutdown WAITING_ON_SERVICES -> WRITE_DISABLED
+Wed Nov 11 21:16:14 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: shutdown WRITE_DISABLED -> WAITING_ON_COALITIONS
+Wed Nov 11 21:16:14 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Warning>: Found lingering process: 13 (reboot)
+Wed Nov 11 21:16:14 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: shutdown WAITING_ON_COALITIONS -> LAUNCH_SHUTDOWN_TEARDOWN
+Wed Nov 11 21:16:14 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: Userspace teardown took: 71 ms
+Wed Nov 11 21:16:14 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: Will be calling reboot(2) with flags: 0x0
+Wed Nov 11 21:16:14 2026 localhost com.apple.xpc.launchd[1] <Notice>: Quiescing queues
+Wed Nov 11 21:16:14 2026 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system) <Notice>: shutdown LAUNCH_SHUTDOWN_TEARDOWN -> WAITING_ON_QUIESCE
+Wed Nov 11 21:16:15 2026 localhost com.apple.xpc.launchd[1] <Notice>: bye
 launchd quiesce complete
 AppleSEPManager: Received Paging off notification
 hfs: unmount initiated on AzulSeed18A5351d.arm64eCustomerRamDisk on device b(3, 0)
@@ -761,29 +761,29 @@ iBoot version: ChefKiss Inferno
 secure boot?: YES
 Paniclog version: 13
 Kernel text base:  0xfffffff007004000
-mach_absolute_time: 0xf3603ab0
+mach_absolute_time: 0xf7890e14
 Epoch Time:        sec       usec
-  Boot    : 0x6af4cb56 0x000ccc96
+  Boot    : 0x6af4da95 0x0009b841
   Sleep   : 0x00000000 0x00000000
   Wake    : 0x00000000 0x00000000
-  Calendar: 0x6af4cbfc 0x0004042a
+  Calendar: 0x6af4db3d 0x0007c038
 
-Panicked task 0xffffffe19b6ca580: 3370 pages, 151 threads: pid 0: kernel_task
-Panicked thread: 0xffffffe19b9585d0, backtrace: 0xffffffe803b63860, tid: 115
-		  lr: 0xfffffff007a2af48  fp: 0xffffffe803b638a0
-		  lr: 0xfffffff007a2ad48  fp: 0xffffffe803b63910
-		  lr: 0xfffffff007b64940  fp: 0xffffffe803b63930
-		  lr: 0xfffffff007b56e1c  fp: 0xffffffe803b639f0
-		  lr: 0xfffffff00811c5f4  fp: 0xffffffe803b63a00
-		  lr: 0xfffffff007a2aa30  fp: 0xffffffe803b63d80
-		  lr: 0xfffffff007a2aa30  fp: 0xffffffe803b63de0
-		  lr: 0xfffffff0097db97c  fp: 0xffffffe803b63e00
-		  lr: 0xfffffff008128b4c  fp: 0xffffffe803b63e10
-		  lr: 0xfffffff007a78ad0  fp: 0xffffffe803b63f00
+Panicked task 0xffffffe19b92d900: 3367 pages, 151 threads: pid 0: kernel_task
+Panicked thread: 0xffffffe19bbbe8b0, backtrace: 0xffffffe80ecdb860, tid: 115
+		  lr: 0xfffffff007a2af48  fp: 0xffffffe80ecdb8a0
+		  lr: 0xfffffff007a2ad48  fp: 0xffffffe80ecdb910
+		  lr: 0xfffffff007b64940  fp: 0xffffffe80ecdb930
+		  lr: 0xfffffff007b56e1c  fp: 0xffffffe80ecdb9f0
+		  lr: 0xfffffff00811c5f4  fp: 0xffffffe80ecdba00
+		  lr: 0xfffffff007a2aa30  fp: 0xffffffe80ecdbd80
+		  lr: 0xfffffff007a2aa30  fp: 0xffffffe80ecdbde0
+		  lr: 0xfffffff0097db97c  fp: 0xffffffe80ecdbe00
+		  lr: 0xfffffff008128b4c  fp: 0xffffffe80ecdbe10
+		  lr: 0xfffffff007a78ad0  fp: 0xffffffe80ecdbf00
 		  lr: 0xfffffff00812495c  fp: 0x0000000000000000
 
 
-** Stackshot Succeeded ** Bytes Traced 15851 (Uncompressed 52064) **
+** Stackshot Succeeded ** Bytes Traced 15993 (Uncompressed 52064) **
 IOPlatformPanicAction -> AppleANS2NVMeController
 IOPlatformPanicAction -> AppleT8027USBXDCI
 IOPlatformPanicAction -> AppleS5L8960XWatchDogTimer
